@@ -1,0 +1,95 @@
+1 - Select all assign statements using wildcard
+assign a;
+Select a pattern a(_, _)
+1, 2, 3
+5000
+2 - Select all assign statements
+assign a; variable v;
+Select a pattern a(v, _)
+1, 2, 3
+5000
+3 - Select all variables on LHS of any assign statements
+assign a; variable v;
+Select v pattern a(v, _)
+i, j, k
+5000
+4 - Select all assign statements with specific LHS
+assign a;
+Select a pattern a("i", _)
+1
+5000
+5 - Select all assign statements with specific LHS that does not exist
+assign a;
+Select a pattern a("x", _)
+none
+5000
+6 - Select all assign statements with complete RHS
+assign a;
+Select a pattern a(_, "(x + y) * z / 1 - x % y")
+2
+5000
+7 - Select all assign statements with complete RHS that does not exist
+assign a;
+Select a pattern a(_, "x + y * z")
+none
+5000
+8 - Select all assign statements with partial RHS
+assign a;
+Select a pattern a(_, _"y * z"_)
+1
+5000
+9 - Select all assign statements with partial RHS
+assign a;
+Select a pattern a(_, _"x + y"_)
+2
+5000
+10 - Select all assign statements with partial RHS
+assign a;
+Select a pattern a(_, _"x % y"_)
+2, 3
+5000
+11 - Select all assign statements with partial RHS that does not exist
+assign a;
+Select a pattern a(_, _"x + y * z"_)
+none
+5000
+12 - Select all assign statements with partial RHS that does not exist
+assign a;
+Select a pattern a(_, _"1 - x % y"_)
+none
+5000
+13 - Select all assign statements with partial RHS that does not exist
+assign a;
+Select a pattern a(_, _"z / 1 - x"_)
+none
+5000
+14 - Select all assign statements with specific LHS and complete RHS
+assign a;
+Select a pattern a("j", "(x + y) * z / 1 - x % y")
+2
+5000
+15 - Select all assign statements with specific LHS and complete RHS that does not exist
+assign a;
+Select a pattern a("k", "x + y * z")
+none
+5000
+16 - Select all assign statements with specific LHS and partial RHS
+assign a;
+Select a pattern a("i", _"y * z / (1 - x)"_)
+1
+5000
+17 - Select all assign statements with specific LHS and partial RHS
+assign a;
+Select a pattern a("j", _"(x + y) * z / 1"_)
+2
+5000
+18 - Select all assign statements with specific LHS and partial RHS
+assign a;
+Select a pattern a("k", _"x + y * (z / 1)"_)
+3
+5000
+19 - Select all assign statements with broken syntax
+assign a;
+Select a pattern a(_, _"x ++ y"_)
+SyntaxError
+5000

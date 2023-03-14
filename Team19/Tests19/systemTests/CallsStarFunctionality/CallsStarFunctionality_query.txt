@@ -1,0 +1,70 @@
+1 - procSyn_procSyn
+procedure p; procedure p2;
+Select p such that Calls*(p, p2)
+p,q,s
+5000
+2 - procSyn, procQuote single nested
+procedure p;
+Select p such that Calls*(p, "p")
+s
+5000
+3 - procSyn, procQuote double nested
+procedure p;
+Select p such that Calls*(p, "q")
+s,p
+5000
+4 - procSyn, procQuote triple nested
+procedure p;
+Select p such that Calls*(p,"r")
+s,p,q
+5000
+5 - procSyn, wildcard
+procedure p;
+Select p such that Calls*(p,_)
+s,p,q
+5000
+6 - procQuote, procSyn does call triple
+procedure p;
+Select p such that Calls*("s",p)
+p,q,r
+5000
+7 - procQuote, procSyn does call double
+procedure p;
+Select p such that Calls*("p", p)
+q,r
+5000
+10 - procQuote, wildcard true
+variable v;
+Select v such that Calls*("s", _)
+a
+5000
+11 - procQuote, wildcard false
+variable v;
+Select v such that Calls*("r", _)
+
+5000
+12 - wildcard_procSyn
+procedure p;
+Select p such that Calls*(_, p)
+p,q,r
+5000
+13 - wildcard_procQuote true
+variable v;
+Select v such that Calls*(_, "r")
+a
+5000
+14 - wildcard_procQuote false
+variable v;
+Select v such that Calls*(_, "s")
+none
+5000
+15 - wildcard_wildcard
+variable v;
+Select v such that Calls*(_,_)
+a
+5000
+16- Select callsT with same synonym
+procedure p;
+Select p such that Calls*(p,p)
+none
+5000

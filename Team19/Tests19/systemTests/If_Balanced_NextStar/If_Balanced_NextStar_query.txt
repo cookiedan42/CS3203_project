@@ -1,0 +1,120 @@
+1 - Select all statements that can be executed immediately after another statement
+stmt s1,s2;
+Select s2 such that Next*(s1,s2)
+2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24
+5000
+2 - test all possible Next statement
+stmt s;
+Select s such that Next*(1,s)
+2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24
+5000
+3 - test half possible Next statement
+stmt s;
+Select s such that Next*(2,s)
+3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24
+5000
+4 - test quarter possible Next statement
+stmt s;
+Select s such that Next*(3,s)
+4,5,6,7,8,9,10,11,12,13
+5000
+5 - test no possible Next statement
+stmt s;
+Select s such that Next*(11,s)
+none
+5000
+6 - test Next* str handling
+stmt s;
+Select s such that Next*("str", s)
+SyntaxError
+5000
+7 - test Next* var handling
+variable v;
+Select v such that Next*(_, v)
+SemanticError
+5000
+8 - test Next* proc handling
+procedure p;
+Select p such that Next*(_, p)
+SemanticError
+5000
+9 - test Next* const handling
+constant c;
+Select c such that Next*(_, c)
+SemanticError
+5000
+10 - test Next* same synonym handling
+assign a;
+Select a such that Next*(a,a)
+none
+5000
+11 - test Next* with if-loops
+if ifs;
+Select ifs such that Next*(1,ifs)
+2,3,4,9,14,15,20
+5000
+12 - test Next* with if-loops before
+if ifs;
+Select ifs such that Next*(ifs,_)
+2,3,4,9,14,15,20
+5000
+13 - test Next* with if-loops after
+if ifs;
+Select ifs such that Next*(_,ifs)
+2,3,4,9,14,15,20
+5000
+14 - Select all statements that can be executed immediately after another statement
+stmt s2;
+Select s2 such that Next*(_,s2)
+2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24
+5000
+15 - Select all statements that execute immediately before another statement
+stmt s1;
+Select s1 such that Next*(s1,_)
+1,2,3,4,5,7,9,10,12,14,15,16,18,20,21,23
+5000
+16 - Select all statements that can be executed immediately after another statement
+assign a;
+Select a such that Next*(_,a)
+5,6,7,8,10,11,12,13,16,17,18,19,21,22,23,24
+5000
+17 - test Next* stmtNo_syn invalid stmtNo firstArg
+stmt s;
+Select s such that Next*(2000, s)
+none
+5000
+18 - test Next* syn_stmtNo invalid stmtNo secondArg
+stmt s;
+Select s such that Next*(s,2000)
+none
+5000
+19 - test Next* stmtNo_stmtNo invalid stmtNo bothArg different
+stmt s;
+Select s such that Next*(2000,3000)
+none
+5000
+20 - test Next* stmtNo_stmtNo invalid stmtNo bothArg same
+stmt s;
+Select s such that Next*(2000,2000)
+none
+5000
+21 - test Next* stmtNo_stmtNo invalid stmtNo secondArg
+stmt s;
+Select s such that Next*(1,2000)
+none
+5000
+22 - test Next* stmtNo_stmtNo invalid stmtNo firstArg
+stmt s;
+Select s such that Next*(2000,1)
+none
+5000
+23 - test Next stmtNo_wildcard invalid stmtNo firstArg
+stmt s;
+Select s such that Next(2000,_)
+none
+5000
+24 - test Next wildcard_stmtNo invalid stmtNo firstArg
+stmt s;
+Select s such that Next(_,2000)
+none
+5000

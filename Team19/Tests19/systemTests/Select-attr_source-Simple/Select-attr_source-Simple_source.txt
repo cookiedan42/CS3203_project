@@ -1,0 +1,32 @@
+procedure calls{
+	call reads;
+	call prints;
+	call assigns;
+}
+procedure reads{
+	read aRead;
+	read bRead;
+	read cRead;
+}
+procedure prints{
+	print aPrint;
+	print bPrint;
+	print cPrint;
+}
+procedure assigns{
+	a = 1 + a;
+	b = 2 - b;
+	c = 3 * c;
+}
+procedure whiles{
+	while (a==a){
+		read z;
+		read z;
+	}
+}
+
+procedure ifs{
+	if (a==a)
+	then{print z;}
+	else{print z;}
+}

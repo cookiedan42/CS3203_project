@@ -1,0 +1,60 @@
+1 - Select all statements that 
+stmt s;
+Select s such that Next*(2,s)
+2,3,4,5,6
+5000
+2 - Select all statements that 
+stmt s;
+Select s such that Next*(3,s)
+2,3,4,5,6
+5000
+3 - Select all statements that 
+stmt s;
+Select s such that Next*(4,s)
+2,3,4,5,6
+5000
+4 - Select all statements that 
+stmt s;
+Select s such that Next*(5,s)
+2,3,4,5,6
+5000
+5 - Select all statements that 
+stmt s;
+Select s such that Next*(7,s)
+8,9,10
+5000
+6 - Select all statements that 
+stmt s;
+Select s such that Next*(8,s)
+10
+5000
+7 - Select all statements that 
+stmt s;
+Select s such that Next*(9,s)
+10
+5000
+8 - Select all statements that 
+stmt s;
+Select s such that Next*(s,10)
+7,8,9
+5000
+9 - Select all statements that 
+stmt s;
+Select s such that Next*(s,9)
+7
+5000
+10 - Select all statements that 
+stmt s;
+Select s such that Next*(s,8)
+7
+5000
+10 - Select all statements that 
+stmt s;
+Select s such that Next*(s,7)
+none
+5000
+8 - Select all statements that 
+stmt s;
+Select BOOLEAN such that Next*(5,_)
+TRUE
+5000

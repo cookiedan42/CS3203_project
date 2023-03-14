@@ -1,0 +1,55 @@
+1 - arg1 mods var x used by arg2, has path through read that modifies var x. Output: Bool, Input: Int_Int 
+
+Select BOOLEAN such that Affects*(1, 3)
+FALSE
+5000
+2 - return all Affects* rel. Output: Tuple, Input: Syn_Syn
+assign a1, a2;
+Select <a1, a2> such that Affects*(a1, a2)
+none
+5000
+3 - return all Affects rel. Output: Tuple, Input: Syn_Syn
+assign a1, a2;
+Select <a1, a2> such that Affects*(a1, a2)
+none
+5000
+4 - stmtno in arg1 of Affects* of bounds. Output: Bool, Input: Int_Wildcard
+
+Select BOOLEAN such that Affects*(2000, _)
+FALSE
+5000
+5 - arg1 mods var x used by arg2, but arg2 is not assign stmt. Output: Syn, Input: Int_Int 
+procedure p;
+Select p such that Affects*(1, 2)
+none
+5000
+6 - stmtno in arg1 has leading zeroes for Affects*. Output: Bool, Input: Int_Wildcard
+
+Select BOOLEAN such that Affects*(000, _)
+SyntaxError
+5000
+7 - stmtno in arg1 is not a valid number. Output: Syn, Input: Int_Int
+stmt s;
+Select s such that Affects*(0abc, 1)
+SyntaxError
+5000
+8 - arg1 passes a str into Affects*. Output: Bool, Input: Str, Int
+
+Select BOOLEAN such that Affects*("str", 2)
+SyntaxError
+5000
+9 - returns all variables if there exists a Affects* rel with a constant. Output: Syn, Input: Syn_Wildcard
+variable v; constant c;
+Select v such that Affects*(c, _)
+SemanticError
+5000
+10 - returns all procedures with a Affects* rel. Output: Syn, Input: Wildcard_Syn
+procedure p;
+Select p such that Affects*(_, p)
+SemanticError
+5000
+11 - returns all var with Affects* rel. Output: Syn, Input: Syn_Int
+variable v;
+Select v such that Affects*(v, 1)
+SemanticError
+5000

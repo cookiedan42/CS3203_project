@@ -1,0 +1,21 @@
+procedure main {
+	a = 100;
+	if (a != 0) then{
+		a = a - 2;
+		b = 0;
+		if(a != 10) then{
+			a = a - 3;
+			c = 0;
+			if (a!= 20) then{
+				a = a - 4;
+				d = 0;
+			} else {
+				c = 2;
+			}
+		} else {
+			b = 0;
+		}
+	} else {
+		a = 2;
+	}
+}

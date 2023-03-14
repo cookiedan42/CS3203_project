@@ -1,0 +1,7 @@
+procedure main {
+    q = x;
+    d = x + 1;
+    b = d;
+    c = x + c;
+    print q;
+}

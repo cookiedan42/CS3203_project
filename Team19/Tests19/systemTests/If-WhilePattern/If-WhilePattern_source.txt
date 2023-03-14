@@ -1,0 +1,26 @@
+procedure p {
+	while (1 == 2) {
+		print x;
+	}
+	while (a >= 0) {
+		read y;
+	}
+	while (b < c) {
+		print z;
+	}
+	if (0 == 0) then {
+		read x;
+} else {
+		read x;
+	}
+	if (d != 1) then {
+		print y;
+	} else {
+		print y;
+	}
+	if (e >= f) then {
+		print z;
+	} else {
+		print z;
+	}
+}

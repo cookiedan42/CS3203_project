@@ -1,0 +1,100 @@
+1 - valid procedure syntax (no clauses, short synonym)
+procedure p;
+Select p
+none
+5000
+2 - valid variable syntax (no clauses, short synonym)
+variable v;
+Select v
+none
+5000
+3 - valid statement syntax (no clauses, short synonym)
+stmt s;
+Select s
+none
+5000
+4 - valid read syntax (no clauses, short synonym)
+read r;
+Select r
+none
+5000
+5 - valid print syntax (no clauses, short synonym)
+print p;
+Select p
+none
+5000
+6 - valid assign syntax (no clauses, synonym with digit)
+assign a1;
+Select a1
+none
+5000
+7 - valid while syntax (no clauses, longer synonym)
+while thisIsASuperLongSynonymToTestLimit12345678901;
+Select thisIsASuperLongSynonymToTestLimit12345678901
+none
+5000
+8 - valid if syntax (no clauses, short synonym)
+if i;
+Select i
+none
+5000
+9 - valid while syntax (no clauses, short synonym)
+while wh;
+Select wh
+none
+5000
+10 - valid procedure syntax (no clauses, short synonym)
+procedure procedure;
+Select procedure
+none
+5000
+11 - valid variable syntax (no clauses, short synonym)
+variable variable;
+Select variable
+none
+5000
+12 - valid statement syntax (no clauses, short synonym)
+stmt stmt;
+Select stmt
+none
+5000
+13 - valid read syntax (no clauses, short synonym)
+read read;
+Select read
+none
+5000
+14 - valid print syntax (no clauses, short synonym)
+print print;
+Select print
+none
+5000
+15 - valid assign syntax (no clauses, synonym with digit)
+assign assign;
+Select assign
+none
+5000
+16 - valid while syntax (no clauses, longer synonym)
+while thisIsASuperLongSynonymToTestLimit12345678901;
+Select thisIsASuperLongSynonymToTestLimit12345678901
+none
+5000
+17 - valid if syntax (no clauses, short synonym)
+if if;
+Select if
+none
+5000
+18 - valid while syntax (no clauses, short synonym)
+while while;
+Select while
+none
+5000
+19 - valid variable syntax (no clauses, invalid synonym)
+variable 1a;
+Select 1a
+none
+5000
+20 - valid assign syntax (no clauses, integer-only synonym)
+assign 5000;
+Select 5000
+none
+5000

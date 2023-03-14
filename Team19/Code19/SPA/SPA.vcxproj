@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\CFG\Cfg.cpp" />
+    <ClCompile Include="..\source\PKB\Storage\CFGStorage.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\AffectsAlgorithm\AffectsStmtStmt.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\AffectsAlgorithm\AffectsStmtSyn.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\AffectsAlgorithm\AffectsStmtWild.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\AffectsAlgorithm\AffectsSynStmt.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\AffectsAlgorithm\AffectsSynSyn.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\AffectsAlgorithm\AffectsWildStmt.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\AffectsAlgorithm\AffectsWildWild.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\AffectsTAlgorithm\AffectsTStmtStmt.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\AffectsTAlgorithm\AffectsTStmtSyn.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\AffectsTAlgorithm\AffectsTSynStmt.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\AffectsTAlgorithm\AffectsTSynSyn.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\AffectsTEvaluator.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\AffectsUtil.cpp" />
+    <ClCompile Include="..\source\QP\QueryParser\AttrRef.cpp" />
+    <ClCompile Include="..\source\QP\QuerySplitter\QuerySplitter.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\AffectsEvaluator.cpp" />
+    <ClCompile Include="..\source\QP\QueryParser\SelectParser.cpp" />
+    <ClCompile Include="..\source\QP\QueryParser\DeclarationsParser.cpp" />
+    <ClCompile Include="..\source\QP\QueryParser\PatternParser.cpp" />
+    <ClCompile Include="..\source\QP\QueryParser\SuchThatParser.cpp" />
+    <ClCompile Include="..\source\QP\QueryParser\WithParser.cpp" />
+    <ClCompile Include="..\source\QP\QueryParser\QueryParser.cpp" />
+    <ClCompile Include="..\source\Request\GetCFGRequest.cpp" />
+    <ClCompile Include="..\source\Request\GetRequests\GetRelationshipRequests\GetRelationshipRequest.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\AST\AST.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\AST\ConditionalExpressionNode.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\AST\ExpressionNode.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\AST\StatementNode.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\CfgExtractor.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\DesignExtractor.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\DesignExtractorUtil.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\EntityExtractor\ConstantExtractor.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\EntityExtractor\EntityExtractor.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\EntityExtractor\ProcedureExtractor.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\EntityExtractor\StatementExtractor.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\EntityExtractor\VariableExtractor.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\PatternExtractor\AssignPatternExtractor.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\PatternExtractor\IfPatternExtractor.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\PatternExtractor\PatternExtractor.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\PatternExtractor\WhilePatternExtractor.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\RelationshipExtractor\CallsExtractor.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\RelationshipExtractor\FollowsExtractor.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\RelationshipExtractor\ModifiesExtractor.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\RelationshipExtractor\ParentExtractor.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\RelationshipExtractor\RelationshipExtractor.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\RelationshipExtractor\UsesExtractor.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\Parser\ConditionalExpressionParser.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\Parser\Operator.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\Parser\ParseException.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\Parser\Parser.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\Parser\ExpressionParser.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\Parser\ParserUtil.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\Parser\StatementParser.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\Parser\TerminalParser.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\SPManager.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\Tokenizer\SPTokenizer.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\Tokenizer\Token.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\Tokenizer\TokenIterator.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\Validator\CallValidator.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\Validator\CondValidator.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\Validator\ExpValidator.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\Validator\Validator.cpp" />
+    <ClCompile Include="..\source\Entity\Entity.cpp" />
+    <ClCompile Include="..\source\Pattern\Pattern.cpp" />
+    <ClCompile Include="..\source\Relationship\Relationship.cpp" />
+    <ClCompile Include="..\source\PKB\Manager\EntityManager.cpp" />
+    <ClCompile Include="..\source\PKB\Manager\RelationshipManager.cpp" />
+    <ClCompile Include="..\source\PKB\Manager\PatternManager.cpp" />
+    <ClCompile Include="..\source\PKB\Storage\EntityStorage.cpp" />
+    <ClCompile Include="..\source\PKB\Storage\EntityStorages\ConstantEntityStorage.cpp" />
+    <ClCompile Include="..\source\PKB\Storage\EntityStorages\VariableEntityStorage.cpp" />
+    <ClCompile Include="..\source\PKB\Storage\EntityStorages\ProcedureEntityStorage.cpp" />
+    <ClCompile Include="..\source\PKB\Storage\EntityStorages\StatementEntityStorage.cpp" />
+    <ClCompile Include="..\source\PKB\Storage\RelationshipStorage.cpp" />
+    <ClCompile Include="..\source\PKB\Storage\PatternStorage.cpp" />
+    <ClCompile Include="..\source\PKB\Storage\PatternStorages\AssignPatternStorage.cpp" />
+    <ClCompile Include="..\source\PKB\Storage\PatternStorages\WhilePatternStorage.cpp" />
+    <ClCompile Include="..\source\PKB\Storage\PatternStorages\IfPatternStorage.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\QueryUtil.cpp" />
+    <ClCompile Include="..\source\QP\Table\Table.cpp" />
+    <ClCompile Include="..\source\QP\QueryObject\DesignEntity.cpp" />
+	<ClCompile Include="..\source\QP\QueryObject\DesignEntityFactory.cpp" />
+    <ClCompile Include="..\source\QP\QueryObject\Declaration.cpp" />
+    <ClCompile Include="..\source\QP\QueryObject\PatternClause.cpp" />
+    <ClCompile Include="..\source\QP\QueryObject\SuchThatClause.cpp" />
+    <ClCompile Include="..\source\QP\QueryObject\QueryObject.cpp" />
+    <ClCompile Include="..\source\QP\QueryObject\SelectObject.cpp" />
+    <ClCompile Include="..\source\QP\QueryObject\WithClause.cpp" />
+    <ClCompile Include="..\source\QP\QueryObject\Clause.cpp" />
+    <ClCompile Include="..\source\QP\QueryObject\Variants\StmtNo.cpp" />
+    <ClCompile Include="..\source\QP\QueryObject\Variants\Integer.cpp" />
+    <ClCompile Include="..\source\QP\QueryObject\Variants\StringExp.cpp" />
+    <ClCompile Include="..\source\QP\QueryObject\Variants\SubExp.cpp" />
+    <ClCompile Include="..\source\QP\QueryObject\Variants\WildCard.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\QueryEvaluator.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\ResultConsolidator.cpp" />
+    <ClCompile Include="..\source\QP\QueryExceptions\QuerySyntaxException.cpp" />
+    <ClCompile Include="..\source\QP\QueryExceptions\QuerySemanticException.cpp" />
+    <ClCompile Include="..\source\QP\QueryManager.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\SuchThatEvaluator.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\RelationshipEvaluator.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\FollowsEvaluator.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\ParentEvaluator.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\UsesEvaluator.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\ModifiesEvaluator.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\PatternEvaluator.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\PatternAssignEvaluator.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\FollowsTEvaluator.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\ParentTEvaluator.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\PatternWhileEvaluator.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\CallsEvaluator.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\CallsTEvaluator.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\PatternIfEvaluator.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\WithEvaluator.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\NextEvaluator.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\NextTEvaluator.cpp" />
+    <ClCompile Include="..\source\QP\QueryObject\DesignAbstraction.cpp" />
+    <ClCompile Include="..\source\QP\QueryObject\DesignAbstractionFactory.cpp" />
+    <ClCompile Include="..\source\PKB\Storage\RelationshipStorages\FollowsStorage.cpp" />
+    <ClCompile Include="..\source\PKB\Storage\RelationshipStorages\ParentStorage.cpp" />
+    <ClCompile Include="..\source\PKB\Storage\RelationshipStorages\CallsStorage.cpp" />
+    <ClCompile Include="..\source\PKB\Storage\RelationshipStorages\UsesStorage.cpp" />
+    <ClCompile Include="..\source\PKB\Storage\RelationshipStorages\ModifiesStorage.cpp" />
+    <ClCompile Include="..\source\PKB\Storage\RelationshipStorages\NextStorage.cpp" />
+    <ClCompile Include="..\source\PKB\Storage\RelationshipStorages\Util.cpp" />
+    <ClCompile Include="..\source\PKB\InsertFacade.cpp" />
+    <ClCompile Include="..\source\PKB\PKB.cpp" />
+    <ClCompile Include="..\source\PKB\GetFacade.cpp" />
+    <ClCompile Include="..\source\Optimizer\Optimizer.cpp" />
+    <ClCompile Include="..\source\QP\QueryParser\QueryParserResult.cpp" />
+    <ClCompile Include="..\source\QP\QueryObject\ClauseGroup.cpp" />
+    <ClCompile Include="..\source\Request\GetRequests\GetRelationshipRequests\GetFollowsRequest.cpp" />
+    <ClCompile Include="..\source\Request\GetRequests\GetRelationshipRequests\GetParentRequest.cpp" />
+    <ClCompile Include="..\source\Request\GetRequests\GetRelationshipRequests\GetCallsRequest.cpp" />
+    <ClCompile Include="..\source\Request\GetRequests\GetRelationshipRequests\GetNextRequest.cpp" />
+    <ClCompile Include="..\source\Request\GetRequests\GetRelationshipRequests\GetModifiesRequest.cpp" />
+    <ClCompile Include="..\source\Request\GetRequests\GetRelationshipRequests\GetUsesRequest.cpp" />
+    <ClCompile Include="..\source\Request\GetRequests\GetPatternRequests\GetPatternRequest.cpp" />
+    <ClCompile Include="..\source\Request\GetRequests\GetPatternRequests\GetWhilePatternRequest.cpp" />
+    <ClCompile Include="..\source\Request\GetRequests\GetPatternRequests\GetAssignPatternRequest.cpp" />
+    <ClCompile Include="..\source\Request\GetRequests\GetPatternRequests\GetIfPatternRequest.cpp" />
+    <ClCompile Include="..\source\Request\GetRequests\GetEntityRequests\GetEntityRequest.cpp" />
+    <ClCompile Include="..\source\Request\GetRequests\GetEntityRequests\GetStatementEntityRequest.cpp" />
+    <ClCompile Include="..\source\Request\GetRequests\GetEntityRequests\GetAssignStatementEntityRequest.cpp" />
+    <ClCompile Include="..\source\Request\GetRequests\GetEntityRequests\GetCallStatementEntityRequest.cpp" />
+    <ClCompile Include="..\source\Request\GetRequests\GetEntityRequests\GetIfStatementEntityRequest.cpp" />
+    <ClCompile Include="..\source\Request\GetRequests\GetEntityRequests\GetPrintStatementEntityRequest.cpp" />
+    <ClCompile Include="..\source\Request\GetRequests\GetEntityRequests\GetReadStatementEntityRequest.cpp" />
+    <ClCompile Include="..\source\Request\GetRequests\GetEntityRequests\GetWhileStatementEntityRequest.cpp" />
+    <ClCompile Include="..\source\Request\GetRequests\GetEntityRequests\GetConstantEntityRequest.cpp" />
+    <ClCompile Include="..\source\Request\GetRequests\GetEntityRequests\GetVariableEntityRequest.cpp" />
+    <ClCompile Include="..\source\Request\GetRequests\GetEntityRequests\GetProcedureEntityRequest.cpp" />
+    <ClCompile Include="..\source\Request\InsertRequests\InsertEntityRequests\InsertConstantEntityRequest.cpp" />
+    <ClCompile Include="..\source\Request\InsertRequests\InsertEntityRequests\InsertVariableEntityRequest.cpp" />
+    <ClCompile Include="..\source\Request\InsertRequests\InsertEntityRequests\InsertProcedureEntityRequest.cpp" />
+    <ClCompile Include="..\source\Request\InsertRequests\InsertEntityRequests\InsertStatementEntityRequest.cpp" />
+    <ClCompile Include="..\source\Request\InsertRequests\InsertPatternRequests\InsertWhilePatternRequest.cpp" />
+    <ClCompile Include="..\source\Request\InsertRequests\InsertPatternRequests\InsertAssignPatternRequest.cpp" />
+    <ClCompile Include="..\source\Request\InsertRequests\InsertPatternRequests\InsertIfPatternRequest.cpp" />
+    <ClCompile Include="..\source\Request\InsertRequests\InsertRelationshipRequests\InsertCallsRequest.cpp" />
+    <ClCompile Include="..\source\Request\InsertRequests\InsertRelationshipRequests\InsertFollowsRequest.cpp" />
+    <ClCompile Include="..\source\Request\InsertRequests\InsertRelationshipRequests\InsertModifiesRequest.cpp" />
+    <ClCompile Include="..\source\Request\InsertRequests\InsertRelationshipRequests\InsertParentRequest.cpp" />
+    <ClCompile Include="..\source\Request\InsertRequests\InsertRelationshipRequests\InsertUsesRequest.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\Validator\ValidatorUtil.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\PKB\Storage\CFGStorage.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\AffectsAlgorithm\AffectsStmtStmt.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\AffectsAlgorithm\AffectsStmtSyn.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\AffectsAlgorithm\AffectsStmtWild.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\AffectsAlgorithm\AffectsSynStmt.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\AffectsAlgorithm\AffectsSynSyn.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\AffectsAlgorithm\AffectsWildStmt.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\AffectsAlgorithm\AffectsWildWild.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\AffectsTAlgorithm\AffectsTStmtStmt.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\AffectsTAlgorithm\AffectsTStmtSyn.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\AffectsTAlgorithm\AffectsTSynStmt.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\AffectsTAlgorithm\AffectsTSynSyn.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\AffectsTEvaluator.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\AffectsUtil.h" />
+    <ClInclude Include="..\source\QP\QuerySplitter\QuerySplitter.h" />
+    <ClInclude Include="..\source\QP\QueryParser\AttrRef.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\AffectsEvaluator.h" />
+    <ClInclude Include="..\source\QP\QueryParser\SelectParser.h" />
+    <ClInclude Include="..\source\QP\QueryParser\DeclarationsParser.h" />
+    <ClInclude Include="..\source\QP\QueryParser\PatternParser.h" />
+    <ClInclude Include="..\source\QP\QueryParser\SuchThatParser.h" />
+    <ClInclude Include="..\source\QP\QueryParser\WithParser.h" />
+    <ClInclude Include="..\source\Request\GetCFGRequest.h" />
+    <ClInclude Include="..\source\SourceProcessor\AST\AST.h" />
+    <ClInclude Include="..\source\QP\QueryParser\QueryParser.h" />
+    <ClInclude Include="..\source\SourceProcessor\AST\BaseNode.h" />
+    <ClInclude Include="..\source\SourceProcessor\AST\ConditionalExpressionNode.h" />
+    <ClInclude Include="..\source\SourceProcessor\AST\ExpressionNode.h" />
+    <ClInclude Include="..\source\SourceProcessor\AST\StatementNode.h" />
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\CfgExtractor.h" />
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\DesignExtractor.h" />
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\DesignExtractorUtil.h" />
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\EntityExtractor\ConstantExtractor.h" />
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\EntityExtractor\EntityExtractor.h" />
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\EntityExtractor\ProcedureExtractor.h" />
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\EntityExtractor\StatementExtractor.h" />
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\EntityExtractor\VariableExtractor.h" />
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\PatternExtractor\AssignPatternExtractor.h" />
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\PatternExtractor\IfPatternExtractor.h" />
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\PatternExtractor\PatternExtractor.h" />
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\PatternExtractor\WhilePatternExtractor.h" />
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\RelationshipExtractor\CallsExtractor.h" />
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\RelationshipExtractor\FollowsExtractor.h" />
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\RelationshipExtractor\ModifiesExtractor.h" />
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\RelationshipExtractor\ParentExtractor.h" />
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\RelationshipExtractor\RelationshipExtractor.h" />
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\RelationshipExtractor\UsesExtractor.h" />
+    <ClInclude Include="..\source\SourceProcessor\Parser\ConditionalExpressionParser.h" />
+    <ClInclude Include="..\source\SourceProcessor\Parser\Operator.h" />
+    <ClInclude Include="..\source\SourceProcessor\Parser\ParseException.h" />
+    <ClInclude Include="..\source\SourceProcessor\Parser\Parser.h" />
+    <ClInclude Include="..\source\SourceProcessor\Parser\ExpressionParser.h" />
+    <ClInclude Include="..\source\SourceProcessor\Parser\ParserUtil.h" />
+    <ClInclude Include="..\source\SourceProcessor\Parser\StatementParser.h" />
+    <ClInclude Include="..\source\SourceProcessor\Parser\TerminalParser.h" />
+    <ClInclude Include="..\source\SourceProcessor\SPManager.h" />
+    <ClInclude Include="..\source\SourceProcessor\Tokenizer\SPTokenizer.h" />
+    <ClInclude Include="..\source\SourceProcessor\Tokenizer\Token.h" />
+    <ClInclude Include="..\source\SourceProcessor\Tokenizer\TokenIterator.h" />
+    <ClInclude Include="..\source\SourceProcessor\Validator\CallValidator.h" />
+    <ClInclude Include="..\source\SourceProcessor\Validator\CondValidator.h" />
+    <ClInclude Include="..\source\SourceProcessor\Validator\ExpValidator.h" />
+    <ClInclude Include="..\source\SourceProcessor\Validator\Validator.h" />
+    <ClInclude Include="..\source\Entity\Entity.h" />
+    <ClInclude Include="..\source\Pattern\Pattern.h" />
+    <ClInclude Include="..\source\Relationship\Relationship.h" />
+    <ClInclude Include="..\source\SourceProcessor\Validator\ValidatorUtil.h" />
+    <ClInclude Include="..\source\PKB\Manager\RelationshipManager.h" />
+    <ClInclude Include="..\source\PKB\Manager\EntityManager.h" />
+    <ClInclude Include="..\source\PKB\Manager\PatternManager.h" />
+    <ClInclude Include="..\source\PKB\Storage\EntityStorage.h" />
+    <ClInclude Include="..\source\PKB\Storage\EntityStorages\ConstantEntityStorage.h" />
+    <ClInclude Include="..\source\PKB\Storage\EntityStorages\VariableEntityStorage.h" />
+    <ClInclude Include="..\source\PKB\Storage\EntityStorages\ProcedureEntityStorage.h" />
+    <ClInclude Include="..\source\PKB\Storage\EntityStorages\StatementEntityStorage.h" />
+    <ClInclude Include="..\source\PKB\Storage\RelationshipStorage.h" />
+    <ClInclude Include="..\source\PKB\Storage\PatternStorage.h" />
+    <ClInclude Include="..\source\PKB\Storage\PatternStorages\AssignPatternStorage.h" />
+    <ClInclude Include="..\source\PKB\Storage\PatternStorages\WhilePatternStorage.h" />
+    <ClInclude Include="..\source\PKB\Storage\PatternStorages\IfPatternStorage.h" />
+    <ClInclude Include="..\source\QP\Table\Table.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\QueryUtil.h" />
+    <ClInclude Include="..\source\QP\QueryObject\DesignEntity.h" />
+	<ClInclude Include="..\source\QP\QueryObject\DesignEntityFactory.h" />
+    <ClInclude Include="..\source\QP\QueryObject\Declaration.h" />
+    <ClInclude Include="..\source\QP\QueryObject\PatternClause.h" />
+    <ClInclude Include="..\source\QP\QueryObject\SuchThatClause.h" />
+    <ClInclude Include="..\source\QP\QueryObject\QueryObject.h" />
+    <ClInclude Include="..\source\QP\QueryObject\SelectObject.h" />
+    <ClInclude Include="..\source\QP\QueryObject\WithClause.h" />
+    <ClInclude Include="..\source\QP\QueryObject\Clause.h" />
+    <ClInclude Include="..\source\QP\QueryObject\Variants\StmtNo.h" />
+    <ClInclude Include="..\source\QP\QueryObject\Variants\Integer.h" />
+    <ClInclude Include="..\source\QP\QueryObject\Variants\StringExp.h" />
+    <ClInclude Include="..\source\QP\QueryObject\Variants\SubExp.h" />
+    <ClInclude Include="..\source\QP\QueryObject\Variants\WildCard.h" />
+    <ClInclude Include="..\source\QP\QueryObject\Argument.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\QueryEvaluator.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\ResultConsolidator.h" />
+    <ClInclude Include="..\source\QP\QueryExceptions\QuerySyntaxException.h" />
+    <ClInclude Include="..\source\QP\QueryExceptions\QuerySemanticException.h" />
+    <ClInclude Include="..\source\QP\QueryManager.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\SuchThatEvaluator.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\FollowsEvaluator.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\ParentEvaluator.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\UsesEvaluator.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\ModifiesEvaluator.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\PatternEvaluator.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\PatternAssignEvaluator.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\FollowsTEvaluator.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\ParentTEvaluator.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\RelationshipEvaluator.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\PatternWhileEvaluator.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\CallsEvaluator.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\CallsTEvaluator.h" />
+    <ClInclude Include="..\source\TypeAlias\StorageAlias.h" />
+    <ClInclude Include="..\source\TypeAlias\TypeAlias.h" />
+    <ClInclude Include="..\source\Hash\Hash.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\PatternIfEvaluator.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\WithEvaluator.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\NextEvaluator.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\NextTEvaluator.h" />
+    <ClInclude Include="..\source\QP\QueryObject\DesignAbstraction.h" />
+    <ClInclude Include="..\source\QP\QueryObject\DesignAbstractionFactory.h" />
+    <ClInclude Include="..\source\PKB\Storage\Storage.h" />
+    <ClInclude Include="..\source\PKB\Storage\RelationshipStorages\FollowsStorage.h" />
+    <ClInclude Include="..\source\PKB\Storage\RelationshipStorages\ParentStorage.h" />
+    <ClInclude Include="..\source\PKB\Storage\RelationshipStorages\CallsStorage.h" />
+    <ClInclude Include="..\source\PKB\Storage\RelationshipStorages\UsesStorage.h" />
+    <ClInclude Include="..\source\PKB\Storage\RelationshipStorages\ModifiesStorage.h" />
+    <ClInclude Include="..\source\PKB\Storage\RelationshipStorages\NextStorage.h" />
+    <ClInclude Include="..\source\PKB\Storage\RelationshipStorages\Util.h" />
+    <ClInclude Include="..\source\Request\Request.h" />
+    <ClInclude Include="..\source\Request\GetRequests\GetRelationshipRequests\GetFollowsRequest.h" />
+    <ClInclude Include="..\source\Request\GetRequests\GetRelationshipRequests\GetParentRequest.h" />
+    <ClInclude Include="..\source\Request\GetRequests\GetRelationshipRequests\GetCallsRequest.h" />
+    <ClInclude Include="..\source\Request\GetRequests\GetRelationshipRequests\GetNextRequest.h" />
+    <ClInclude Include="..\source\Request\GetRequests\GetRelationshipRequests\GetModifiesRequest.h" />
+    <ClInclude Include="..\source\Request\GetRequests\GetRelationshipRequests\GetUsesRequest.h" />
+    <ClInclude Include="..\source\Definitions\Definitions.h" />
+    <ClInclude Include="..\source\Request\GetRequests\GetPatternRequests\GetPatternRequest.h" />
+    <ClInclude Include="..\source\Request\GetRequests\GetPatternRequests\GetIfPatternRequest.h" />
+    <ClInclude Include="..\source\Request\GetRequests\GetPatternRequests\GetAssignPatternRequest.h" />
+    <ClInclude Include="..\source\Request\GetRequests\GetPatternRequests\GetWhilePatternRequest.h" />
+    <ClInclude Include="..\source\Request\GetRequests\GetEntityRequests\GetEntityRequest.h" />
+    <ClInclude Include="..\source\Request\GetRequests\GetEntityRequests\GetStatementEntityRequest.h" />
+    <ClInclude Include="..\source\Request\GetRequests\GetEntityRequests\GetAssignStatementEntityRequest.h" />
+    <ClInclude Include="..\source\Request\GetRequests\GetEntityRequests\GetCallStatementEntityRequest.h" />
+    <ClInclude Include="..\source\Request\GetRequests\GetEntityRequests\GetIfStatementEntityRequest.h" />
+    <ClInclude Include="..\source\Request\GetRequests\GetEntityRequests\GetPrintStatementEntityRequest.h" />
+    <ClInclude Include="..\source\Request\GetRequests\GetEntityRequests\GetReadStatementEntityRequest.h" />
+    <ClInclude Include="..\source\Request\GetRequests\GetEntityRequests\GetWhileStatementEntityRequest.h" />
+    <ClInclude Include="..\source\Request\GetRequests\GetEntityRequests\GetProcedureEntityRequest.h" />
+    <ClInclude Include="..\source\Request\GetRequests\GetEntityRequests\GetVariableEntityRequest.h" />
+    <ClInclude Include="..\source\Request\GetRequests\GetEntityRequests\GetConstantEntityRequest.h" />
+    <ClInclude Include="..\source\CFG\Cfg.h" />
+    <ClInclude Include="..\source\Request\GetRequests\GetRelationshipRequests\GetRelationshipRequest.h" />
+    <ClInclude Include="..\source\PKB\InsertFacade.h" />
+    <ClInclude Include="..\source\PKB\PKB.h" />
+    <ClInclude Include="..\source\PKB\GetFacade.h" />
+    <ClInclude Include="..\source\Optimizer\Optimizer.h" />
+    <ClInclude Include="..\source\QP\QueryParser\QueryParserResult.h" />
+    <ClInclude Include="..\source\QP\QueryObject\ClauseGroup.h" />
+    <ClInclude Include="..\source\Request\InsertRequests\InsertEntityRequests\InsertEntityRequest.h" />
+    <ClInclude Include="..\source\Request\InsertRequests\InsertEntityRequests\InsertConstantEntityRequest.h" />
+    <ClInclude Include="..\source\Request\InsertRequests\InsertEntityRequests\InsertVariableEntityRequest.h" />
+    <ClInclude Include="..\source\Request\InsertRequests\InsertEntityRequests\InsertStatementEntityRequest.h" />
+    <ClInclude Include="..\source\Request\InsertRequests\InsertEntityRequests\InsertProcedureEntityRequest.h" />
+    <ClInclude Include="..\source\Request\InsertRequests\InsertPatternRequests\InsertPatternRequest.h" />
+    <ClInclude Include="..\source\Request\InsertRequests\InsertPatternRequests\InsertAssignPatternRequest.h" />
+    <ClInclude Include="..\source\Request\InsertRequests\InsertPatternRequests\InsertWhilePatternRequest.h" />
+    <ClInclude Include="..\source\Request\InsertRequests\InsertPatternRequests\InsertIfPatternRequest.h" />
+    <ClInclude Include="..\source\Request\InsertRequests\InsertRelationshipRequests\InsertCallsRequest.h" />
+    <ClInclude Include="..\source\Request\InsertRequests\InsertRelationshipRequests\InsertFollowsRequest.h" />
+    <ClInclude Include="..\source\Request\InsertRequests\InsertRelationshipRequests\InsertModifiesRequest.h" />
+    <ClInclude Include="..\source\Request\InsertRequests\InsertRelationshipRequests\InsertParentRequest.h" />
+    <ClInclude Include="..\source\Request\InsertRequests\InsertRelationshipRequests\InsertUsesRequest.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DC21A1EA-D2C6-4D14-A2B4-E025B64BDE81}</ProjectGuid>
+    <RootNamespace>SPA</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

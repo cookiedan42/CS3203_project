@@ -1,0 +1,120 @@
+1 - What are the procedures in the program?
+procedure p;
+Select p
+main, readPoint, printResults, computeCentroid
+5000
+2 - What are the variables in the program?
+variable v;
+Select v
+flag, count, cenX, cenY, x, y, normSq
+5000
+3 - Which statements follow assignment 15 directly or indirectly?
+stmt s; 
+Select s such that Follows* (15, s)
+16,17,18
+5000
+4 - Which variables have their values modified in statement 15?
+variable v; 
+Select v such that Modifies (15, v)
+count
+5000
+5 - Which variables are used in assignment 23?
+variable v; 
+Select v such that Uses (23, v)
+cenX, cenY
+5000
+6 - Which procedures modify variable 'x'?
+variable v; procedure p; 
+Select p such that  Modifies (p, "x")
+main, computeCentroid, readPoint
+5000
+7 - Find assignments within a loop
+assign a; while w;
+Select a such that Parent* (w, a)
+15,16,17
+5000
+8 - Which is the parent of statement #16?
+stmt s;
+Select s such that Parent (s, 16)
+14
+5000
+9 - Find assignments that contain expression count + 1 on the right hand side
+assign a; 
+Select a pattern a ( _ , "count + 1")
+15
+5000
+10 - Find assignments that contain sub-expression cenX * cenX on the right hand side and normSq on the left hand side
+assign a;
+Select a pattern a ( "normSq" , _"cenX * cenX"_)
+23
+5000
+11 - Same as 10 but using a different variable name
+assign newa; 
+Select newa pattern newa ( "normSq" , _"cenX * cenX"_)
+23
+5000
+12 - Find while loops with assignment to variable 'count'
+assign a; while w;
+Select w such that Parent* (w, a) pattern a ("count", _)
+14
+5000
+13 - Find assignments that use and modify the same variable
+assign a; variable v;
+Select a such that Uses (a, v) pattern a (v, _)
+15,16,17,21,22
+5000
+14 - Find assignments that use and modify the variable 'x'
+assign a;
+Select a pattern a ("x", _) such that Uses (a, "x")
+none
+5000
+15 - Find assignments that use and modify the variable 'x' (alternative)
+assign a;
+Select a such that Uses (a, "x") pattern a ("x", _)
+none
+5000
+16 - Find assignments that are nested directly or indirectly in a while loop and modify the variable 'count'
+assign a; while w;
+Select a such that Parent* (w, a) pattern a ("count", _)
+15
+5000
+17 - Find assignments that are nested directly or indirectly in a while loop and modify the variable 'count' (alternative)
+assign a; while w; 
+Select a pattern a ("count", _) such that Parent* (w, a)
+15
+5000
+18 - Addition of ';' at the end
+variable v;
+Select v;
+SyntaxError
+5000
+19 - Small caps 'Select' used
+variable v;
+select v
+SyntaxError
+5000
+20 - Uses with first arg being wildcard
+variable v; 
+Select v such that Uses(_, v)
+SemanticError
+5000
+21 - Pattern with no pattern indicated
+stmt s; 
+Select s pattern s(_, _)
+SemanticError
+5000
+22 - Misspelled design-entity reference
+variable v; statement s;
+Select s
+SyntaxError
+5000
+23 - Missing Select statement
+variable v; stmt s;
+
+SyntaxError
+5000
+24 - Missing declarations
+
+Select s
+SemanticError
+5000

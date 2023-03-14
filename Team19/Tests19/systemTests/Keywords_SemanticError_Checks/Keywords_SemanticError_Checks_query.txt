@@ -1,0 +1,45 @@
+1 - invalid: select clause missing declaration
+variable v;
+Select such that Follows(3, v)
+SyntaxError
+5000
+2 - invalid: select clause single declaration does not exist
+variable v;
+Select b such that Follows(3, v)
+SemanticError
+5000
+3 - invalid: select clause tuple contains declaration that does not exist
+variable v; assign a;
+Select <a, v.varName, c> pattern a(v, _)
+SemanticError
+5000
+4 - invalid: declaration contains wildcard as synonym name
+variable v, _;
+Select v such that Follows (3, _);
+SyntaxError
+5000
+5 - invalid: declaration contains quoted string as synonym name
+variable v, "x"; assign a;
+Select v pattern a(v, "x");
+SyntaxError
+5000
+6 - valid: variable using synonym name = keyword ‘pattern’
+variable pattern; assign a;
+Select pattern pattern a(pattern, _)
+i, m, x, z
+5000
+7 - valid: assign using synonym name = keyword ‘pattern’
+assign pattern; variable v;
+Select pattern pattern pattern(v, _)
+1, 2, 3, 5, 6, 8, 9, 12, 13, 16, 17
+5000
+8 - valid: variable using synonym name = keyword ‘with’
+variable with, v;
+Select with with with.varName = v.varName
+i, k, m, x, z
+5000
+9 - valid: variable using synonym name = keyword ‘such’
+variable such; stmt s;
+Select such such that Follows(3, s)
+i, k, m, x, z
+5000

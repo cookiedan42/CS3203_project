@@ -1,0 +1,35 @@
+procedure proc {
+    read  a;
+    print d;
+    b = c;
+
+    while (x > 0) {
+        read  a1;
+        print d1;
+        b1 = c1;
+        while (y > z) {
+            read a2;
+            print d2;
+            b2 = c2;
+        }
+    }
+
+    if (x > 0) then {
+        read a3;
+        print d3;
+        b3 = c3;
+        if (y > z) then {
+    read a4;
+            print d4;
+            b4 = c4;
+        } else {
+            read a5;
+            print d5;
+            b5 = c5;
+        }
+    } else {
+        read a6;
+        print d6;
+        b6 = c6;
+    }
+}

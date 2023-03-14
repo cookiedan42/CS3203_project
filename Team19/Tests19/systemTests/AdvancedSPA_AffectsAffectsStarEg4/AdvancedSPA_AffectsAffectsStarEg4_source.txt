@@ -1,0 +1,10 @@
+procedure alpha {
+    x = 1;
+    call beta;
+    a = x; }
+
+procedure beta {
+    if ( i != 2 ) then {
+        x = a + 1; }
+    else {
+        a = b; } }

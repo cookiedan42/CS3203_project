@@ -1,0 +1,30 @@
+procedure whileMain{
+x = 10; 
+y = 1; 
+z = 20;
+while (x>0){   
+a = 10; 
+read p;
+b = 1;
+c = 20;
+while (y>0){
+    print p;
+x = 10;
+if (x==10) then {
+    x = s + 1; 
+} else {
+    print i;
+}
+y = 1;
+z = 20;
+}
+k=10;
+}
+k = 10;
+call proc;
+}
+
+procedure proc {
+x = y;
+k = z;
+}

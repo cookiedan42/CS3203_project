@@ -1,0 +1,16 @@
+procedure main {
+    print a;
+while (x == 0) {
+    if (x == x) 
+then{ read x; }
+else{ read x; }
+}
+print a;
+}
+
+procedure main2 {
+    if (x == x) 
+then{ read x; }
+else{ read x; }
+read a;
+}

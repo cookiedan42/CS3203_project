@@ -1,0 +1,42 @@
+procedure main1 {
+	b = 1;
+	a = 2 + b;
+	b = a % 2;
+	b = b % 2;
+	c = b / 3;
+	c = a + 3;
+	print c;
+	read d;
+	d = d - 1;  
+	if( d > 0) then {
+		b = d + 1;
+		c = b + 1;
+	} else {
+		b = d + 2;
+		c = b + 3;
+	}
+	e = c;
+	while ( e > 0 ){
+		d = f + e;
+		print e;
+		e = 1;
+		d = e + 1;
+		f = 2;
+	}
+	m = a;
+	while ( f > 0 ){
+		a = b - d;
+		if ( f > 10) then {
+			f = g + i;
+			s = ag2;
+		} else {
+			h = g + f;
+			k = s;
+		}
+		b = c;
+		b = d;
+		g = a + 1;
+		s = k;
+	}
+	a = m + d;
+}

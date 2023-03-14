@@ -1,0 +1,115 @@
+1 - procSyn_wildcard all procedures that modifies a variable
+procedure p;
+Select p such that Modifies(p,_)
+p,q,r,s
+5000
+2 - procSyn_wildcard all procedures if there exist a procedure that modifies a variable
+procedure p; procedure q;
+Select p such that Modifies(q,_)
+p,q,r,s,k
+5000
+3 - procSyn_varSyn all variables that was modified by a procedure
+procedure p; variable v;
+Select v such that Modifies(p,v)
+a,b,c,e
+5000
+4 - procSyn_varSyn all variables if there exist a procedure that modifies a variable
+procedure p; variable v; variable v2;
+Select v2 such that Modifies(p,v)
+a,b,c,d,e,i
+5000
+5 - procSyn_varQuote all procedures that modifies a specific variable outside if while 
+procedure p;
+Select p such that Modifies(p, "b")
+s,p
+5000
+6 - procSyn_varQuote all procedures that modifies a specific variable found in a while container
+procedure p;
+Select p such that Modifies(p, "e")
+s
+5000 
+7 - procSyn_varQuote all procedures that modifies a specific variable found in an if container
+procedure p;
+Select p such that Modifies(p , "a")
+r, q, p, s
+5000
+8 - procQuote_wildCard  all procedures if specific proc modifies any object 
+procedure p;
+Select p such that Modifies("s", _) 
+p,q,r,s,k
+5000
+9 - procQuote_wildCard no procedures if specific proc that does not modify any object
+procedure p;
+Select p such that Modifies("k" , _)
+none
+5000
+10 - procQuote_varSyn variables that are modified by a specific procedure single nested
+variable v;
+Select v such that Modifies("r", v )
+a,c
+5000
+11 - procQuote_varSyn variables that are modified by a specific procedure double nested
+variable v;
+Select v such that Modifies("q", v )
+a,c
+5000
+12 - procQuote_varSyn variables that are modified by a specific procedure triple nested
+variable v;
+Select v such that Modifies("p", v )
+a,b,c
+5000
+13 - procQuote_varQuote all var if procedures with specific name modifies specific variable
+variable v;
+Select v such that Modifies("s", "e")
+a,b,c,d,e,i
+5000
+14 - procQuote_varQuote no var if proc with specific name that does not modify specific variable
+variable v;
+Select v such that Modifies("p", "e")
+none
+5000
+15 - StmtNo_wild Var modified by stmtNo single nested
+variable v;
+Select v such that Modifies(5,_)
+a,b,c,d,e,i
+5000
+16 - stmtNo_wild var not modified by stmtNo
+variable v;
+Select v such that Modifies(11,_)
+none
+5000
+17 - stmtNo, varQuote all proc if stmtNum modifies specific var
+procedure p;
+Select p such that Modifies(2,  "a")
+p,q,r,s,k
+5000
+18 - stmtNo, varQuote all proc if stmtNum modifies specific var
+procedure p;
+Select p such that Modifies(2,  "b")
+none
+5000
+19 - stmtNo, varQuote no proc if stmtNum does not modify specific var
+procedure p;
+Select p such that Modifies(11,"d")
+none
+5000
+20 - stmtNo varSyn variables modified by stmtNo single nested
+variable v;
+Select v such that Modifies(5, v)
+a
+5000
+- stmtNo varSyn variables modified by stmtNo double nested
+variable v;
+Select v such that Modifies(2, v)
+a,c
+5000
+- stmtNo varSyn Variables modified by stmtNo double nested
+variable v;
+Select v such that Modifies(7, v)
+a,b,c
+5000
+21 - stmtNo varSyn no proc if stmtnum does not modify some var
+procedure p; variable v;
+Select p such that Modifies(11,v)
+none
+5000

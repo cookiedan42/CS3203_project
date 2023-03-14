@@ -1,0 +1,45 @@
+1 - Exact pattern match
+assign a;
+Select a pattern a ( _ , "v + x * y + z * t")
+1
+5000
+2 - stmt #1 contains other expression terms other than v
+assign a;
+Select a pattern a ( _ , "v")
+none
+5000
+3 - stmt #1 contains v as part of the expression on the RHS
+assign a;
+Select a pattern a ( _ , _"v"_)
+1
+5000
+4 - stmt #1 contains x*y as a term on the RHS
+assign a;
+Select a pattern a ( _ , _"x*y"_)
+1
+5000
+5 - stmt #1 does not contain v+x as a sub-expression on the RHS
+assign a;
+Select a pattern a ( _ , _"v+x"_)
+none
+5000
+6 - stmt #1 contains v+x*y as a sub-expression on the RHS
+assign a;
+Select a pattern a ( _ , _"v+x*y"_)
+1
+5000
+7 - stmt #1 does not contain y+z*t as a sub-expression on the RHS
+assign a;
+Select a pattern a ( _ , _"y + z * t"_)
+none
+5000
+8 - stmt #1 does not contain x*y+z*t as a sub-expression on the RHS
+assign a;
+Select a pattern a ( _ , _"x * y + z * t"_)
+none
+5000
+9 - stmt #1 contains v+x*y+z*t as a sub-expression on the RHS
+assign a;
+Select a pattern a ( _ , _"v + x * y + z * t"_)
+1
+5000

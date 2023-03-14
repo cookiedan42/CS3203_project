@@ -1,0 +1,11 @@
+procedure proc1 {
+	d = 1;
+	read a;
+	print b;
+	call proc2;
+	c=d;
+}
+
+procedure proc2 {
+	c=1;
+}

@@ -1,0 +1,140 @@
+1 - Basic. Expect TRUE
+assign a1;
+Select BOOLEAN such that Affects(2,3)
+TRUE
+5000
+2 - Basic same lhs. Expect TRUE
+assign a1;
+Select BOOLEAN such that Affects(3,4)
+TRUE
+5000
+3 - affects(1,2), Affects(2,3) Affects(3,4), Affects(4,5)
+assign a1;
+Select BOOLEAN such that Affects*(1,5)
+TRUE
+5000
+4 - Basic differnet lhs. Expect TRUE
+assign a1;
+Select BOOLEAN such that Affects*(4,5)
+TRUE
+5000
+5 - a1 modifies var, a2 doesnt use var. Expect FALSE
+assign a1;
+Select BOOLEAN such that Affects*(4,6)
+FALSE
+5000
+6 - a1 modifies var, a2 uses var. a2 is a print. Expect FALSE
+assign a1;
+Select BOOLEAN such that Affects*(6,7)
+FALSE
+5000
+7 - a1 modifies var, a2 uses var. a1 is a read. Expect FALSE
+assign a1;
+Select BOOLEAN such that Affects*(8,9)
+FALSE
+5000
+8 - var in if condition. Expect false
+assign a1;
+Select BOOLEAN such that Affects*(9,10)
+FALSE
+5000
+9 - if branch enter. Expect TRUE
+assign a1;
+Select BOOLEAN such that Affects*(9,11)
+TRUE
+5000
+10 - if branch within expect True
+assign a1;
+Select BOOLEAN such that Affects*(11,12)
+TRUE
+5000
+11 - else branch enter. Expect TRUE
+assign a1;
+Select BOOLEAN such that Affects*(9, 13)
+TRUE
+5000
+12 - else branch within. Expect TRUE
+assign a1;
+Select BOOLEAN such that Affects*(13,14)
+TRUE
+5000
+13 - if else branch parrallel Affects*. Expect FALSE
+assign a1;
+Select BOOLEAN such that Affects*(11,14)
+FALSE
+5000
+14 - if branch exit. Expect TRUE
+assign a1;
+Select BOOLEAN such that Affects*(12,15)
+TRUE
+5000
+15 - else branch exit. Expect TRUE
+assign a1;
+Select BOOLEAN such that Affects*(14,15)
+TRUE
+5000
+16 - var in while condition. a2 while statement
+assign a1;
+Select BOOLEAN such that Affects*(15,16)
+FALSE
+5000
+17 - while loop enter
+assign a1;
+Select BOOLEAN such that Affects*(15,17)
+TRUE
+5000
+18 - while loop enter. a2 modifies but print statement
+assign a1;
+Select BOOLEAN such that Affects*(15,18)
+FALSE
+5000
+19 - while loop within 1 pass valid
+assign a1;
+Select BOOLEAN such that Affects*(19,20)
+TRUE
+5000
+21 - while loop within 2 pass valid
+assign a1;
+Select BOOLEAN such that Affects*(21,17)
+TRUE
+5000
+22 - while loop within 2 pass invalid 
+assign a1;
+Select BOOLEAN such that Affects*(20,17)
+FALSE
+5000
+23 - accross while valid
+assign a1;
+Select BOOLEAN such that Affects*(22,34)
+TRUE
+5000
+24 - within but modified along path within 2 pass
+assign a1;
+Select BOOLEAN such that Affects*(31,24)
+TRUE
+5000
+25 - while loop a1 after a2 before if branch within 2 pass valid
+assign a1;
+Select BOOLEAN such that Affects*(32,26)
+TRUE
+5000
+26 - while loop a1 after a2 before else branch within 2 pass valid
+assign a1;
+Select BOOLEAN such that Affects*(33,29)
+TRUE
+5000
+27 - while loop a1 after a2 before if branch within 2 pass Invalid
+assign a1;
+Select BOOLEAN such that Affects*(33, 28)
+FALSE
+5000
+28 - if branch to else branch within 2 loops valid
+assign a1;
+Select BOOLEAN such that Affects*(26,28)
+TRUE
+5000
+29 - while loop if modifies makes else branch invalid within 3 loops
+assign a1;
+Select BOOLEAN such that Affects*(34,30)
+FALSE
+5000

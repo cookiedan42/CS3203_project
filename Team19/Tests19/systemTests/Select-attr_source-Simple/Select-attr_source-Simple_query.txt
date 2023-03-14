@@ -1,0 +1,66 @@
+01 - procedure.procName
+procedure p;
+Select <p,p.procName>
+calls calls, reads reads, prints prints, assigns assigns, whiles whiles, ifs ifs
+5000
+21 - call.procName
+call c;
+Select <c,c.procName>
+1 reads, 2 prints, 3 assigns
+5000
+31 - variable.varName
+variable v;
+Select <v,v.varName> such that Modifies("assigns",v)
+a a,b b,c c
+5000
+41 - read.varName
+read r;
+Select <r,r.varName>
+4 aRead,5 bRead,6 cRead,14 z,15 z
+5000
+51 - print.varName
+print p;
+Select <p,p.varName>
+7 aPrint,8 bPrint,9 cPrint,17 z,18 z
+5000
+61 - constant.value
+constant c;
+Select <c,c.value>
+1 1,2 2,3 3
+5000
+71 - stmt.stmt#
+stmt s;
+Select <s,s.stmt#> such that Uses(s,"a")
+3 3, 10 10, 13 13, 16 16
+5000
+81 - read.stmt#
+read s;
+Select <s,s.stmt#>
+4 4,5 5,6 6, 14 14, 15 15
+5000
+91 - print.stmt#
+print s;
+Select <s,s.stmt#>
+7 7,8 8,9 9, 17 17 , 18 18
+5000
+101 - call.stmt#
+call s;
+Select <s,s.stmt#>
+1 1,2 2,3 3
+5000
+111 - assign.stmt#
+assign s;
+Select <s,s.stmt#>
+10 10,11 11,12 12
+5000
+121 - while.stmt#
+while s;
+Select <s,s.stmt#>
+13 13
+5000
+131 - if.stmt#
+if s;
+Select <s,s.stmt#>
+16 16
+5000
+

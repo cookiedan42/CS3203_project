@@ -1,0 +1,25 @@
+1 - Select all statements that can be executed immediately after another statement
+stmt s1,s2;
+Select s2 such that Next(s1,s2)
+2,3,4,5,6,7,8,9,10,12,11,13
+5000
+2 - test two possible Next statement
+stmt s;
+Select s such that Next(2,s)
+3,13
+5000
+3 - test two possible Next statement
+stmt s;
+Select s such that Next(5,s)
+6,12
+5000
+4 - test two possible Next statement
+stmt s;
+Select s such that Next(8,s)
+9,11
+5000
+5 - test no possible Next statement
+stmt s;
+Select s such that Next(13,s)
+none
+5000

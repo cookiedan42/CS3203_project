@@ -1,0 +1,40 @@
+procedure main {
+	a = 22;
+	if (a != 0) then{
+		if(a != 10) then{
+			if (a!= 20) then{
+				a = a - 4;
+				d = 0;
+			} else {
+				a = a - 4;
+				c = 2;
+			}
+		} else {
+			if (a!= 20) then{
+				a = a - 4;
+				d = 0;
+			} else {
+				a = a - 4;
+				c = 2;
+			}
+		}
+	} else {
+		if(a != 10) then{
+			if (a!= 20) then{
+				a = a - 4;
+				d = 0;
+			} else {
+				a = a - 4;
+				c = 2;
+			}
+		} else {
+			if (a!= 20) then{
+				a = a - 4;
+				d = 0;
+			} else {
+				a = a - 4;
+				c = 2;
+			}
+		}
+	}
+}

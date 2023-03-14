@@ -1,0 +1,64 @@
+procedure slowNext{
+while (a == a) {
+    if (a == a)
+    then {
+        if (a == a)
+        then {
+            if (a == a)
+            then { read a; }
+            else { read a; }
+        }
+        else {
+            if (a == a)
+            then { read a; }
+            else { read a; }
+        }
+    }
+    else {
+        if (a == a)
+            then {
+                if (a == a)
+                then { read a; }
+                else { read a; }
+        } else {
+            if (a == a)
+                then { read a; }
+                else { read a; }
+        }
+    }
+}
+}
+
+procedure slowAffect {
+while (a==a){
+if(a==a)
+then{
+while(a==a){
+        i=j;
+        h=i;
+}
+while(a==a){
+        g=h;
+        f=g;
+}
+while (a==a){
+        e=f;
+        d=e;
+}
+        c=d;
+        b=c;
+        a=b;
+}
+else{
+        s=r;
+        r=q;
+        q=p;
+        p=o;
+        o=n;
+        n=m;
+        m=l;
+        l=k;
+        k=j;
+}
+}
+}

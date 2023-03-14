@@ -1,0 +1,14 @@
+procedure p {
+    read a;
+    call q;
+}
+procedure q {
+    call r;
+}
+procedure r {
+    read a;
+}
+procedure s {
+    call p;
+    call q;
+}

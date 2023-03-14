@@ -1,0 +1,20 @@
+procedure proc1 {
+	b = 1;
+	c = b + 1;
+	call proc2;
+	b = b + 2;
+}
+
+procedure proc2 {
+	b = c + 2;
+}
+
+procedure proc3 {
+	d = c + 12;
+}
+
+procedure proc4 {
+	while (a == 1) {
+		p = p + 1;
+	}
+}

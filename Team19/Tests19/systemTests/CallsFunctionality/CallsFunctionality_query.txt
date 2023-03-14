@@ -1,0 +1,90 @@
+1 - Select all procedures directly called by specified procedure 
+procedure p;
+Select p such that Calls("p", p)
+q
+5000
+2 - Select all procedures directly called by specified procedure 
+procedure p;
+Select p such that Calls("s", p)
+p,q
+5000
+3 - Select all procedures directly called by specified procedure 
+procedure p;
+Select p such that Calls("r", p)
+none
+5000
+4 - Select all procedures that directly calls specific procedure 
+procedure p;
+Select p such that Calls(p, "r")
+q
+5000
+5 - Select all procedures directly called by specified procedure 
+procedure p;
+Select p such that Calls(p,"q")
+s,p
+5000
+6 - Select all procedures directly called by specified procedure 
+procedure p;
+Select p such that Calls(p,"s")
+none
+5000
+7 - Select all procedures which are directly called by some procedure
+procedure p;
+Select p such that Calls(_, p)
+p,q,r
+5000
+8 - Select all procedures which directly call some procedure
+procedure p;
+Select p such that Calls(p,_)
+s,p,q
+5000
+9 - Select all procedures which directly call some procedure
+procedure p,q;
+Select p such that Calls(p,q)
+s,p,q
+5000
+10 - Select all procedures which are directly called by some procedure
+procedure p,q;
+Select p such that Calls(q, p)
+p,q,r
+5000
+11 - Specific procedures that does not call any other procedures
+variable a;
+Select a such that Calls("r", _)
+none
+5000
+12 - Specific procedures that calls some other procedures
+variable a;
+Select a such that Calls("p",_)
+a
+5000
+13 - Any procedures that calls specific procedure
+variable a;
+Select a such that Calls(_, "r")
+a
+5000
+14 - No procedures calls specific procedure
+variable a;
+Select a such that Calls(_, "s")
+none
+5000
+15 - Select if there is a link
+variable v;
+Select v such that Calls("p", "q")
+a
+5000
+16 - Select none if there is no link
+variable v;
+Select v such that Calls("q", "p")
+none
+5000
+17 - Select if there is a link
+variable v;
+Select v such that Calls( _, _ )
+a
+5000
+18- Select calls with same synonym
+procedure p;
+Select p such that Calls(p,p)
+none
+5000

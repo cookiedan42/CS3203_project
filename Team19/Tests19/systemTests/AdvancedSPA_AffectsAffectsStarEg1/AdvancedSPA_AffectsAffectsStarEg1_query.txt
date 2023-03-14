@@ -1,0 +1,45 @@
+1 - arg1 mods var x used by arg2, has path through if-else that does not modify var x. Output: Bool, Input: Int_Int 
+assign a1;
+Select BOOLEAN such that Affects(1, 5)
+TRUE
+5000
+2 - nothing modified arg, Output: StmtNo, Input: Syn_Int
+assign a1;
+Select a1 such that Affects(a1, 4)
+none
+5000
+3 - arg modified above and in if-else loop, Output: StmtNo, Input: Syn_Int
+assign a1;
+Select a1 such that Affects(a1, 5)
+1,3
+5000
+4 - arg modified above and in if-else loop (alternative), Output: StmtNo, Input: Syn_Syn
+assign a1,a2;
+Select a1 such that Affects(a1, a2) with a2.stmt# = 5
+1,3
+5000
+5 - return all affects tuples, Output: Tuple, Input: Syn_Syn
+assign a1,a2;
+Select <a1, a2> such that Affects(a1,a2)
+1 5, 3 5
+5000
+6 - args modified by arg bef if-else loop, Output: StmtNo, Input: Int_Syn
+assign a1;
+Select a1 such that Affects(1, a1)
+5
+5000
+7 - return all assign statements if there is at least one Affects rs, Output: StmtNo, Input: Wildcard_Wildcard
+assign a1;
+Select a1 such that Affects(_,_)
+1,3,4,5
+5000
+8 - return all assign statements that has at least one Affects rs, Output: StmtNo, Input: Syn_Wildcard
+assign a1;
+Select a1 such that Affects(a1,_)
+1,3
+5000
+9 - return all assign statements is Affect-ed by at least one Affects rs, Output: StmtNo, Input: Wildcard_Syn
+assign a1;
+Select a1 such that Affects(_,a1)
+5
+5000

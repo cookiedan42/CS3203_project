@@ -1,0 +1,25 @@
+1 - select statement response
+stmt s;
+Select s such that Affects(s,5)
+1
+5000
+2 - select assign response
+assign s;
+Select s such that Affects(s,5)
+1
+5000
+3 - select read none
+read s;
+Select s such that Affects(s,5)
+none
+5000
+4 - select print none
+print s;
+Select s such that Affects(s,5)
+none
+5000
+5 - select call none
+call s;
+Select s such that Affects(s,5)
+none
+5000

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\SP_PKB">
+      <UniqueIdentifier>{b8516e0d-13a9-4d17-9e0d-71f4a54d1b0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SP_PKB\Relationship">
+      <UniqueIdentifier>{3b226dbd-eced-4bfd-9277-fab2616f576f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\QE">
+      <UniqueIdentifier>{fd5ce3f1-0904-4580-9251-42d06a072800}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\QE\Test_QE_Affects">
+      <UniqueIdentifier>{2179efb7-918d-4b92-a02d-dc596c8bff53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\QE\Test_QE_AffectsT">
+      <UniqueIdentifier>{dd056834-4a94-4643-8c0b-20053804f7a3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QE\AffectsContext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFrontEnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SP_PKB\Relationship\TestFollowsToPKB.cpp">
+      <Filter>Source Files\SP_PKB\Relationship</Filter>
+    </ClCompile>
+    <ClCompile Include="SP_PKB\Relationship\TestParentToPKB.cpp">
+      <Filter>Source Files\SP_PKB\Relationship</Filter>
+    </ClCompile>
+    <ClCompile Include="SP_PKB\Relationship\TestCallsToPKB.cpp">
+      <Filter>Source Files\SP_PKB\Relationship</Filter>
+    </ClCompile>
+    <ClCompile Include="SP_PKB\Relationship\TestModifiesToPKB.cpp">
+      <Filter>Source Files\SP_PKB\Relationship</Filter>
+    </ClCompile>
+    <ClCompile Include="SP_PKB\Relationship\TestUsesToPKB.cpp">
+      <Filter>Source Files\SP_PKB\Relationship</Filter>
+    </ClCompile>
+    <ClCompile Include="SP_PKB\TestSP_PKB.cpp">
+      <Filter>Source Files\SP_PKB</Filter>
+    </ClCompile>
+    <ClCompile Include="QE\AffectsT\TestQEAffectsT.cpp">
+      <Filter>Source Files\QE\Test_QE_AffectsT</Filter>
+    </ClCompile>
+    <ClCompile Include="QE\Affects\TestQEAffects.cpp">
+      <Filter>Source Files\QE\Test_QE_Affects</Filter>
+    </ClCompile>
+    <ClCompile Include="QE\Affects\Test_QE_Affects_Calls.cpp">
+      <Filter>Source Files\QE\Test_QE_Affects</Filter>
+    </ClCompile>
+    <ClCompile Include="QE\AffectsT\Test_QE_AffectsT_syn_stmt.cpp">
+      <Filter>Source Files\QE\Test_QE_AffectsT</Filter>
+    </ClCompile>
+    <ClCompile Include="QE\AffectsT\Test_QE_AffectsT_syn_syn.cpp">
+      <Filter>Source Files\QE\Test_QE_AffectsT</Filter>
+    </ClCompile>
+    <ClCompile Include="QE\AffectsT\Test_QE_AffectsT_stmt_syn.cpp">
+      <Filter>Source Files\QE\Test_QE_AffectsT</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,12 @@
+procedure p {
+    x = 1;
+    z = 2;
+    z = x;
+    if (z < 2) then {
+        x = 3;
+    } else {
+        x = 4;
+    }
+    while (x > 0){
+        x = x - 1;
+    }

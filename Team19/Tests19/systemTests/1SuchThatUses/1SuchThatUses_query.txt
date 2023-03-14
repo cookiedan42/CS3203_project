@@ -1,0 +1,160 @@
+1 - Select all statements that uses some variable
+stmt s; variable v;
+Select s such that Uses(s, v)
+2, 3, 4, 6, 7, 8, 10, 11, 12, 14, 15, 16, 18, 19, 21, 22, 24, 25
+5000
+2 - Select all statements that uses some variable using wildcard
+stmt s;
+Select s such that Uses(s, _)
+2, 3, 4, 6, 7, 8, 10, 11, 12, 14, 15, 16, 18, 19, 21, 22, 24, 25
+5000
+3 - Select all variables that is used by some statement
+stmt s; variable v;
+Select v such that Uses(s, v)
+c, c1, c2, c3, c4, c5, c6, d, d1,d2,d3,d4,d5,d6, x, y, z
+5000
+4 - Select all statements that uses a specific variable
+stmt s;
+Select s such that Uses(s, "c")
+3
+5000
+5 - Select all variables that is used by a specific statement
+variable v;
+Select v such that Uses(3, v)
+c
+5000
+6 - Select all statements (Uses evaluates to true)
+stmt s;
+Select s such that Uses(2, "d")
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25
+5000
+7 - Select all variables (Uses evaluates to true)
+variable v;
+Select v such that Uses(3, "c")
+a, a1, a2, a3, a4, a5, a6, b, b1, b2, b3, b4, b5, b6, c, c1, c2, c3, c4, c5, c6, d, d1, d2, d3, d4, d5, d6, x, y, z
+5000
+8 - Select no statement (Uses evaluates to false)
+stmt s;
+Select s such that Uses(2, "a")
+none
+5000
+9 - Select no variable (Uses evaluates to false)
+variable v;
+Select v such that Uses(3, "b")
+none
+5000
+10 - Select all print statements that uses some variable
+print p; variable v;
+Select p such that Uses(p, v)
+2, 6, 10, 14, 18, 21, 24
+5000
+11 - Select all print statements that uses some variable using wildcard
+print p;
+Select p such that Uses(p, _)
+2, 6, 10, 14, 18, 21, 24
+5000
+12 - Select all variables that is used by some print statement
+print p; variable v;
+Select v such that Uses(p, v)
+d, d1, d2, d3, d4, d5, d6
+5000
+13 - Select all print statements that uses variable “d”
+print p;
+Select p such that Uses(p, "d")
+2
+5000
+14 - Select all print statements that uses variable “c” (none)
+print p;
+Select p such that Uses(p, "c")
+none
+5000
+15 - Select all assign statements that uses some variable
+assign a; variable v;
+Select a such that Uses(a, v)
+3, 7, 11, 15, 19, 22, 25
+5000
+16 - Select all assign statements that uses some variable using wildcard
+assign a;
+Select a such that Uses(a, _)
+3, 7, 11, 15, 19, 22, 25
+5000
+17 - Select all variables that is used by some assign statement
+assign a; variable v;
+Select v such that Uses(a, v)
+c, c1, c2, c3, c4, c5, c6
+5000
+18 - Select all assign statements that uses variable “c”
+assign a;
+Select a such that Uses(a, "c")
+3
+5000
+19 - Select all assign statements that uses variable “b” (none)
+assign a;
+Select a such that Uses(a, "b")
+none
+5000
+20 - Select all while statements that uses some variable
+while w; variable v;
+Select w such that Uses(w, v)
+4, 8
+5000
+21 - Select all while statements that uses some variable using wildcard
+while w;
+Select w such that Uses(w, _)
+4, 8
+5000
+22 - Select all variables that is used by some while statement
+while w; variable v;
+Select v such that Uses(w, v)
+c1, c2, d1, d2, x, y, z
+5000
+23 - Select all while statements that uses variable “d1”
+while w;
+Select w such that Uses(w, "d1")
+4
+5000
+24 - Select all while statements that uses condition variable “z”
+while w;
+Select w such that Uses(w, "z")
+4, 8
+5000
+25 - Select all while statements that uses variable “d4” (none)
+while w;
+Select w such that Uses(w, "d4")
+none
+5000
+26 - Select all if statements that uses some variable
+if ifs; variable v;
+Select ifs such that Uses(ifs, v)
+12, 16
+5000
+27 - Select all if statements that uses some variable using wildcard
+if ifs;
+Select ifs such that Uses(ifs, _)
+12, 16
+5000
+28 - Select all variables that is used by some if statement
+if ifs; variable v;
+Select v such that Uses(ifs, v)
+c3, c4, c5, c6, d3, d4, d5, d6, x, y, z
+5000
+29 - Select all if statements that uses variable “d3”
+if ifs;
+Select ifs such that Uses(ifs, "d3")
+12
+5000
+30 - Select all if statements that uses condition variable “y”
+if ifs;
+Select ifs such that Uses(ifs, "y")
+12, 16
+5000
+31 - Select all if statements that uses variable “d2” (none)
+if ifs;
+Select ifs such that Uses(ifs, "d2")
+none
+5000
+32 - Select all read statements that uses some variable (always none)
+read r; variable v;
+Select r such that Uses(r, v)
+none
+5000

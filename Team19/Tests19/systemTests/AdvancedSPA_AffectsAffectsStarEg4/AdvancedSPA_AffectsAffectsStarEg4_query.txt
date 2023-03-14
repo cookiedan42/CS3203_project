@@ -1,0 +1,75 @@
+1 - arg1 mods var x used by arg2, has path through call that modifies var x. Output: Bool, Input: Int_Int 
+
+Select BOOLEAN such that Affects(1, 3)
+FALSE
+5000
+2 - return all Affects* rel. Output: Tuple, Input: Syn_Syn
+assign a1, a2;
+Select <a1, a2> such that Affects*(a1, a2)
+none
+5000
+3 - return all Affects rel. Output: Tuple, Input: Syn_Syn
+assign a1, a2;
+Select <a1, a2> such that Affects(a1, a2)
+none
+5000
+4 - returns all variables if there exists a Affects rel. Output: Syn, Input: Wildcard_Wildcard
+variable v;
+Select v such that Affects(_,_)
+none
+5000
+5 - returns all variables if there exists a Affects rel with a variable. Output: Syn, Input: Wildcard_Syn
+variable v, x;
+Select v such that Affects(_,x)
+SemanticError
+5000
+6 - returns all variables if there exists a Affects rel with a constant. Output: Syn, Input: Syn_Wildcard
+variable v; constant c;
+Select v such that Affects(c,_)
+SemanticError
+5000
+7 - returns all procedures if there exists a Affects rel with a procedure. Output: Syn, Input: Wildcard_Syn
+procedure p;
+Select p such that Affects(_,p)
+SemanticError
+5000
+8 - returns all procedures if there exists a Affects rel with a call. Output: Syn, Input: Syn_Wildcard
+procedure p; call c;
+Select p such that Affects(c,_)
+none
+5000
+9 - returns all procedures if there exists a Affects rel with a read. Output: Syn, Input: Syn_Wildcard
+procedure p; read r;
+Select p such that Affects(r,_)
+none
+5000
+10 - returns all procedures if there exists a Affects rel with a if. Output: Syn, Input: Syn_Wildcard
+procedure p; if f;
+Select p such that Affects(f,_)
+none
+5000
+11 - returns all procedures if there exists a Affects rel with a attrRef of stmt. Output: Syn, Input: Wildcard_Syn
+procedure p; stmt s;
+Select p such that Affects(_,s.stmt#)
+SyntaxError
+5000
+12 - returns all procedures if there exists a Affects rel with string. Output: Bool, Input: Str_Wildcard
+
+Select BOOLEAN such that Affects("str", _)
+SyntaxError
+5000
+13 - returns all procedures. arg1 has leading zeroes. Output: Syn, Input: Wildcard_Syn
+procedure p;
+Select p such that Affects(00,3)
+SyntaxError
+5000
+14 - stmtno in arg2 is out of bounds. Output: Syn, Input: Int_Int
+procedure p;
+Select p such that Affects(2000, 1)
+none
+5000
+15 - stmtno in arg1 is not a valid number. Output: Bool, Input: Int_Wildcard
+
+Select BOOLEAN such that Affects(0abc, _)
+SyntaxError
+5000

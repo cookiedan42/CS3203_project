@@ -1,0 +1,130 @@
+1 - Select all procedures that uses some variable
+procedure p; variable v;
+Select p such that Uses(p, v)
+p, q, r
+5000
+2 - Select all procedures that uses some variable using wildcard
+procedure p;
+Select p such that Uses(p, _)
+p, q, r
+5000
+3 - Select all variables used by some procedure
+procedure p; variable v;
+Select v such that Uses(p, v)
+a, b, c, d, x, y, z
+5000
+4 - Select all procedures that uses variable x
+procedure p;
+Select p such that Uses(p, "x")
+p
+5000
+5 - Select all procedures that uses variable y
+procedure p;
+Select p such that Uses(p, "y")
+p, q
+5000
+6 - Select all procedures that uses variable z
+procedure p;
+Select p such that Uses(p, "z")
+p, q, r
+5000
+7 - Select all variables used by procedure p
+variable v;
+Select v such that Uses("p", v)
+a, b, c, d, x, y, z
+5000
+8 - Select all variables used by procedure q
+variable v;
+Select v such that Uses("q", v)
+y, z
+5000
+9 - Select all variables used by procedure r
+variable v;
+Select v such that Uses("r", v)
+z
+5000
+10 - Select all procedures when Uses evaluate to true
+procedure p;
+Select p such that Uses("p", "y")
+p, q, r
+5000
+11 - Select all variables when Uses evaluate to true
+variable v;
+Select v such that Uses("p", "z")
+a, b, c, d, w, x, y, z
+5000
+12 - Select no procedures when Uses evaluate to false
+procedure p;
+Select p such that Uses("q", "x")
+none
+5000
+13 - Select no variables when Uses evaluate to false
+variable v;
+Select v such that Uses("r", "a")
+none
+5000
+14 - Select all call statements that uses some variable
+call c; variable v;
+Select c such that Uses(c, v)
+4, 6
+5000
+15 - Select all call statements that uses some variable using wildcard
+call c;
+Select c such that Uses(c, _)
+4, 6
+5000
+16 - Select all variables used in some call statement
+call c; variable v;
+Select v such that Uses(c, v)
+y, z
+5000
+17 - Select all call statements that uses variable z
+call c;
+Select c such that Uses(c, "z")
+4, 6
+5000
+18 - Select all variables used in call statement 4
+variable v;
+Select v such that Uses(4, v)
+y, z
+5000
+19 - Select all call statements when Uses evaluate to true
+call c;
+Select c such that Uses(4, "z")
+4, 6
+5000
+20 - Select no call statements when Uses evaluate to false
+call c;
+Select c such that Uses(4, "x")
+none
+5000
+21 - Select all statements that uses some variable
+stmt s; variable v;
+Select s such that Uses(s, v)
+1, 2, 3, 4, 5, 6, 7
+5000
+22 - Select all variables used by some statement
+stmt s; variable v;
+Select v such that Uses(s, v)
+a, b, c, d, x, y, z
+5000
+23 - Select all statements that uses variable z
+stmt s;
+Select s such that Uses(s, "z")
+1, 2, 4, 6, 7
+5000
+24 - Select all variables used by statement 2
+variable v;
+Select v such that Uses(2, v)
+c, d, x, y, z
+5000
+25 - Select all statements when Uses evaluate to true
+stmt s;
+Select s such that Uses(1, "z")
+1, 2, 3, 4, 5, 6, 7
+5000
+26 - Select no statements when Uses evaluate to false
+stmt s;
+Select s such that Uses(2, "a")
+none
+5000

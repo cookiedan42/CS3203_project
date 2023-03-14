@@ -1,0 +1,25 @@
+procedure p {
+    read b;
+    call q;
+}
+procedure q {
+    call r;
+}
+procedure r {
+    if (a == b)  then {
+        read a;
+    } else {
+    	read c;
+     }
+}
+procedure s {
+    call p;
+    while ( i == 0) {
+        call q;
+        read e;
+    }
+}
+
+procedure k {
+    print d;
+}

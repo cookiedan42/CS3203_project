@@ -1,0 +1,75 @@
+1 - test Affects* worst case
+stmt s1,s2;
+Select <s1,s2> such that Affects*(s1,s2)
+TRUE
+5000
+2 - test optimization arg2 to wild base 
+stmt s1,s2;
+Select s1 such that Affects*(s1,s2)
+TRUE
+5000
+3 - test optimization arg2 to wild target
+stmt s1,s2;
+Select s1 such that Affects*(s1,_)
+TRUE
+5000
+4 - test optimization arg1 to wild base 
+stmt s1,s2;
+Select s2 such that Affects*(s1,s2)
+TRUE
+5000
+5 - test optimization arg1 to wild target 
+stmt s1,s2;
+Select s2 such that Affects*(_,s2)
+TRUE
+5000
+6 - test optimization both to wild base 
+stmt s1,s2;
+Select BOOLEAN such that Affects*(s1,s2)
+TRUE
+5000
+7 - test optimization arg1 to wild target 
+stmt s1,s2;
+Select BOOLEAN such that Affects*(_,_)
+TRUE
+5000
+8 - test Next* worst case
+stmt s1,s2;
+Select <s1,s2> such that Next*(s1,s2)
+TRUE
+5000
+9 - test optimization arg2 to wild base 
+stmt s1,s2;
+Select s1 such that Next*(s1,s2)
+TRUE
+5000
+10 - test optimization arg2 to wild target
+stmt s1,s2;
+Select s1 such that Next*(s1,_)
+TRUE
+5000
+11 - test optimization arg1 to wild base 
+stmt s1,s2;
+Select s1 such that Next*(s1,s2)
+TRUE
+5000
+12 - test optimization arg1 to wild target 
+stmt s1,s2;
+Select s2 such that Next*(_,s2)
+TRUE
+5000
+13 - test optimization both to wild base 
+stmt s1,s2;
+Select BOOLEAN such that Next*(s1,s2)
+TRUE
+5000
+14 - test optimization arg1 to wild target 
+stmt s1,s2;
+Select BOOLEAN such that Next*(_,_)
+TRUE
+5000
+15 - test optimization both to wild base 
+stmt s1,s2,s3;
+Select s3 such that Next*(s1,s2)
+TRUE
+5000

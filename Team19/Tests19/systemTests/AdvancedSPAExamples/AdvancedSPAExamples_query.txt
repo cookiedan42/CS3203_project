@@ -1,0 +1,158 @@
+1 - What are the procedures in the program that call another procedure?
+procedure p, q;
+Select p such that Calls (p, _)
+First, Second
+5000
+2 - What are the procedures in the program that call another procedure? (alternative)
+procedure p, q;
+Select p.procName such that Calls (p, q)
+First, Second
+5000
+3 - Which procedures directly call procedure 'Third' and modify the variable 'i'? 
+procedure p, q;
+Select p such that Calls (p, q) with q.procName = "Third" such that Modifies (p, "i")
+Second
+5000
+4 - Which procedures directly call procedure 'Third' and modify the variable 'i'? (alternative)
+procedure p; 
+Select p such that Calls (p, "Third") and Modifies (p, "i")
+Second
+5000
+5 - Which procedures call procedure 'Third' directly or indirectly?
+procedure p;
+Select p such that Calls* (p, "Third")
+First, Second
+5000
+6 - Which procedures are called from 'Second' in a while loop?
+procedure p; call c; while w;
+Select p such that Calls ("Second", p) and Parent (w, c) with c.procName = p.procName
+Third
+5000
+7 - Is there an execution path from statement 5 to statement 12? 
+
+Select BOOLEAN such that Next* (5, 12)
+TRUE
+5000
+8 - Is there an execution path from statement 5 to statement 12 that passes through statement 11?
+
+Select BOOLEAN such that Next* (5, 11) and Next* (11, 12)
+FALSE
+5000
+9 - Find assignments to variable 'x' located in a loop, that can be reached (in terms of control flow) from statement 4.
+assign a; while w;
+Select a pattern a ("x", _) such that Parent* (w, a) and Next* (4, a)
+7
+5000
+10 - Find assignments to variable 'x' located in a loop, that can be reached (in terms of control flow) from statement 4 (alternative)
+assign a; while w;
+Select a such that Modifies (a, "x") and Parent* (w, a) and Next* (4, a)
+7
+5000
+11 - Which statements can be executed between statement 8 and statement 15?
+stmt s;
+Select s such that Next* (8, s) and Next* (s, 15)
+6, 7, 8, 9, 10, 11, 12, 13, 14
+5000
+12 - Which assignments directly or indirectly affect value computed at assignment 13?
+assign a;
+Select a such that Affects* (a, 13)
+4, 5, 7, 9, 11, 12
+5000
+13 - Which are the pair of assignments that affect each other?
+assign a1, a2;
+Select <a1, a2> such that Affects (a1, a2)
+11 13,11 15,12 13,13 14,13 15,14 15,16 17,4 11,4 13,4 15,4 7,5 13,5 9,7 11,7 13,7 15,7 7,9 13,9 9
+5000
+14 - Which are the pair of assignments that affect each other? (alternative)
+assign a1, a2;
+Select <a1.stmt#, a2> such that Affects (a1, a2)
+11 13,11 15,12 13,13 14,13 15,14 15,16 17,4 11,4 13,4 15,4 7,5 13,5 9,7 11,7 13,7 15,7 7,9 13,9 9
+5000
+15 - Find all pairs of procedures p and q such that p calls q.
+procedure p, q;
+Select <p, q> such that Calls (p, q)
+First Second, Second Third
+5000
+16 - Find all statements whose statement number is equal to some constant.
+stmt s; constant c;
+Select s with s.stmt# = c.value
+1,2,5
+5000
+17 - Find procedures whose name is the same as the name of some variable.
+procedure p; variable v;
+Select p with p.procName = v.varName
+none
+5000
+18 - Find statements that is followed by statement 13.
+stmt s, s1;
+Select s.stmt# such that Follows* (s, s1) with s1.stmt#=13
+10,4,5,6
+5000
+19 - Find three while loops nested one in another.
+while w1, w2, w3;
+Select <w1, w2, w3> such that Parent* (w1, w2) and Parent* (w2, w3)
+none
+5000
+20 - Find all assignments with variable 'x' at the left-hand side located in some while loop, and that can be reached (in terms of control flow) from statement 7.
+assign a; while w; stmt s;
+Select a such that Parent* (w, a) and Next* (7, s) pattern a("x", _) with a.stmt# = s.stmt#
+7
+5000
+21 - Find all while statements with 'x' as a control variable.
+while w;
+Select w pattern w ("x", _)
+none
+5000
+22 - Find assignment statements where variable x appears on the left hand side.
+assign a;
+Select a pattern a ("x", _)
+4,7,11,15
+5000
+23 - Find assignments with expression x*y+z on the right hand side.
+assign a;
+Select a pattern a (_, "x * y + z")
+15
+5000
+24 - Find assignments in which x*y+z is a sub-expression of the expression on the right hand side.
+assign a;
+Select a pattern a (_, _"x * y + z"_)
+15
+5000
+25 - Find all assignments to variable 'x' such that value of 'x' is subsequently re‑assigned recursively in an assignment statement that is nested inside two loops.
+assign a1, a2; while w1, w2;
+Select a2 pattern a1 ("x", _) and a2 ("x", _"x"_) such that Affects (a1, a2) and Parent* (w2, a2) and Parent* (w1, w2)
+none
+5000
+26 - Is the value 12 equals to 12?
+
+Select BOOLEAN with 12 = 12
+TRUE
+5000
+27 - Is statement 15 an assignment?
+assign a;
+Select BOOLEAN with a.stmt# = 15
+TRUE
+5000
+28 - If statement 15 is an assignment statement, find all the assignment statements
+assign a, a1;
+Select a1 with a.stmt# = 15
+11,12,13,14,15,16,17,4,5,7,9
+5000
+29 - If statement 15 is an assignment statement, find all the assignment statements (alternative)
+assign a, a1;
+Select a1 with 15 = a.stmt#
+11,12,13,14,15,16,17,4,5,7,9
+5000
+30 - If procedure 'Second' calls procedure 'Third', find all the combinations of an assignment-while statement pairs.
+assign a; while w;
+Select <a, w> such that Calls ("Second", "Third")
+4 6,5 6,7 6,9 6,11 6,12 6,13 6,14 6,15 6,16 6,17 6
+5000
+31 - If there exists an assignment that modifies the variable 'y', find all the combinations of two-procedures pairs.
+procedure p, q; assign a;
+Select <p, q> such that Modifies (a, "y")
+First First, First Second, First Third, Second First, Second Second, Second Third, Third First, Third Second, Third Third
+32 - Is there a procedure that calls some other procedure in the program? 
+
+Select BOOLEAN such that Calls (_,_)
+TRUE

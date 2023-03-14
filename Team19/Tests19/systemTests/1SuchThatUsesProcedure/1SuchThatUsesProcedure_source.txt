@@ -1,0 +1,17 @@
+procedure p {
+    while (a == b) {
+        while (c == d) {
+            print x;
+            call q;
+        }
+    }
+}
+
+procedure q {
+    w = y;
+    call r;
+}
+
+procedure r {
+    print z;
+}

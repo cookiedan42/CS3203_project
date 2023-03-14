@@ -1,0 +1,18 @@
+procedure main {
+	a = 100;
+	while(a != 0) {
+		a = a - 2;
+		b = 0;
+		while (a != 10){
+			a = a - 3;
+			c = 0;
+			while (a!= 20){
+				a = a - 4;
+				d = 0;
+			}
+			c = 2;
+		}
+		b = 0;
+	}
+	a = 2;
+}

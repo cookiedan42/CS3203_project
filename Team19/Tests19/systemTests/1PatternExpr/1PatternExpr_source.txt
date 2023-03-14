@@ -1,0 +1,5 @@
+procedure p {
+	i = x + y * z / (1 - x) % y;
+	j = (x + y) * z / 1 - x % y;
+	k = x + y * (z / 1) - x % y;
+}

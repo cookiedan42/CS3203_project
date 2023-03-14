@@ -1,0 +1,17 @@
+procedure main {
+while (x == 0) {
+x = x + 1;
+y = 0;
+x = x + 1;
+if (y == 5) then {
+    y = x;
+            while (z == y) {
+                         z = y;
+            }
+              z = x * y; 
+} else {
+    t = 10 - 5;
+}
+            p = 10 % 5;
+}
+}

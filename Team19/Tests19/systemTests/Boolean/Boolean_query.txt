@@ -1,0 +1,20 @@
+1 - Select BOOLEAN with no declarations
+
+Select BOOLEAN
+TRUE
+5000
+2 - Select BOOLEAN with conditions satisfied
+stmt s1, s2;
+Select BOOLEAN such that Follows(s1, s2)
+TRUE
+5000
+3 - Select BOOLEAN with conditions not satisfied
+stmt s1, s2;
+Select BOOLEAN such that Parent(s1, s2)
+FALSE
+5000
+4 - Select BOOLEAN with BOOLEAN declared as synonym
+stmt BOOLEAN;
+Select BOOLEAN
+1, 2
+5000

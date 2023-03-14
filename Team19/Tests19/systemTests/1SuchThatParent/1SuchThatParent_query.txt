@@ -1,0 +1,165 @@
+1 - Parent statement, statement number
+stmt s;
+Select s such that Parent(s,5)
+4
+5000
+2 - Parent while statement, statement number
+while w;
+Select w such that Parent(w,10)
+9
+5000
+3 - Parent if stmtNumber
+if ifs;
+Select ifs such that Parent(ifs, 14)
+12
+5000
+4 - Parent statement, wildcard
+stmt s;
+Select s such that Parent(s, _)
+4, 9, 12
+5000
+5 - Parent synonym, synonym
+stmt s; stmt s2;
+Select s such that Parent(s,s2)
+4, 9, 12
+5000
+6 - Parent 1 nested
+stmt s;
+Select s such that Parent(4,s)
+5,6,7,8,9,17
+5000
+7 - Parent 2 nested
+stmt s;
+Select s such that Parent(9,s)
+10,11,12,15,16
+5000
+8 - Parent* 1 nested
+stmt s;
+Select s such that Parent*(s, 8)
+4
+5000
+9 - Parent* 2 nested
+stmt s;
+Select s such that Parent*(s,16)
+4,9
+5000
+10 - Parent(_,s)
+stmt s;
+Select s such that Parent(_, s)
+5,6,7,8, 9, 10,11,12,13,14,15,16,17
+5000
+11 - Parent 1 nested
+stmt s;
+Select s such that Parent(s,4)
+
+5000
+12 - Parent 2 nested
+stmt s;
+Select s such that Parent(s,9)
+4
+5000
+13 - Parent statement, statement number
+stmt s;
+Select s such that Parent(4,s)
+5,6,7,8,9,17
+5000
+14 - Parent while statement, statement number. Tuple
+while w,w1;
+Select <w,w1> such that Parent(w,w1)
+4 9
+5000
+15 - Parent* if within while, statement number. Tuple
+while wh; if ifs;
+Select <wh,ifs> such that Parent*(wh, ifs)
+4 12, 9 12
+5000
+16 - Parent statement, wildcard
+stmt s;
+Select s such that Parent(_, s)
+5,6,7,8,9,10,11,12,13,14,15,16,17
+5000
+17 - Parent synonym, synonym
+stmt s; stmt s2;
+Select s such that Parent(s2,s)
+5, 6, 7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17
+5000
+18 - Parent 1 nested
+stmt s;
+Select s such that Parent(s,17)
+4
+5000
+19 - Parent 2 nested
+stmt s;
+Select s such that Parent(s,16)
+9
+5000
+20 - Parent* 1 nested
+stmt s;
+Select s such that Parent*(4, s)
+5,6,7,8,9,10,11,12,13,14,15,16,17
+5000
+21 - Parent* 2 nested
+stmt s;
+Select s such that Parent*(9,s)
+10,11,12,13,14,15,16
+5000
+22 - Parent symbol wrong
+stmt s;
+Select s such that Parents(1,2)
+SyntaxError
+5000
+23 - Parent take string
+stmt s;
+Select s such that Parent("a",_)
+SyntaxError
+5000
+24 - Parent take int attribute
+read r;
+Select r such that Parent(r.stmt#,3)
+SyntaxError
+5000
+25 - Parent take str attribute
+read r;
+Select r such that Parent(4,r.varName)
+SyntaxError
+5000
+26 - Parent take non-int number
+print p;
+Select p such that Parent(1,3.5)
+SyntaxError
+5000
+27 - Parent take negative number
+print p;
+Select p such that Parent(1,-2)
+SyntaxError
+5000
+28 - Parent take variable
+print p; variable v;
+Select p such that Parent(p,v)
+SemanticError
+5000
+29 - Parent take procedure
+print p; procedure proc;
+Select p such that Parent(proc,p)
+SemanticError
+5000
+30 - Parent take constant
+print p; constant c;
+Select p such that Parent(c,1)
+SemanticError
+5000
+31 - Parent takes syn as both args
+stmt s;
+Select s such that Parent(s,s)
+none
+5000
+32 - There exists at least one Parent rel
+
+Select BOOLEAN such that Parent(_,_)
+TRUE
+5000
+33 - ParentT takes syn as both args
+stmt s;
+Select s such that Parent*(s,s)
+none
+5000

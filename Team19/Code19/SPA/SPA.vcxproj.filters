@@ -1,0 +1,1308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\PKB">
+      <UniqueIdentifier>{da0cfc7d-bae2-4ffd-a7a8-2513752862a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\QP">
+      <UniqueIdentifier>{01f7fc5d-41d6-4845-bb17-d6c984582501}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SP">
+      <UniqueIdentifier>{cac51661-a79a-4172-9534-2b22d71fec85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\QP">
+      <UniqueIdentifier>{1c8e0d08-7cb3-4929-acde-57508df8f4b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PKB">
+      <UniqueIdentifier>{01f1d918-9337-4075-853e-d5095968aac4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SP">
+      <UniqueIdentifier>{8d735bdf-3710-4101-9ca2-96b695f41919}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SP\DesignExtractor">
+      <UniqueIdentifier>{8d91a682-e24c-45d7-a6e0-c6984a50b249}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SP\DesignExtractor">
+      <UniqueIdentifier>{f2f29e5e-7fc5-4cbf-aedd-a15f1be046f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SP\Parser">
+      <UniqueIdentifier>{ff944acc-de93-45ee-8c01-6ebdb8d9dae1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SP\Parser">
+      <UniqueIdentifier>{90e2eab0-b62a-45cd-ab88-064e0f6475ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SP\Validator">
+      <UniqueIdentifier>{c4b7956c-6770-4627-ad96-2e417b65a767}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SP\Validator">
+      <UniqueIdentifier>{64136b04-1316-42dd-90da-2cdfda4d02b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SP\Tokenizer">
+      <UniqueIdentifier>{d56f3d07-81d5-4d84-9282-70b6a7c1692b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SP\Tokenizer">
+      <UniqueIdentifier>{e53c52f3-7586-45fa-82d9-353e08636e3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SP\AST">
+      <UniqueIdentifier>{2e8b7236-bf63-4fb5-8292-fee8249411e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SP\AST">
+      <UniqueIdentifier>{8447cf88-b8dd-49e4-bf02-954f7931138e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Hash">
+      <UniqueIdentifier>{1ec6f3fa-a364-4021-a16e-537c30c3419f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Pattern">
+      <UniqueIdentifier>{a10b6dba-c698-49c4-b0bc-e39c51cea37d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Relationship">
+      <UniqueIdentifier>{18655bc6-76f7-4e90-8d26-e54b87034a05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entity">
+      <UniqueIdentifier>{7ab99feb-5e0f-49a0-9340-b7e95207b5f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PKB\Manager">
+      <UniqueIdentifier>{2ae86c8e-7a01-48be-b180-4bdd4558793f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PKB\Storage">
+      <UniqueIdentifier>{c0079289-4056-40e2-a030-35cbe4e75400}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PKB\Storage\RelationshipStorages">
+      <UniqueIdentifier>{86833c65-57c7-4ca3-aea7-d74ec6961edc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PKB\Manager">
+      <UniqueIdentifier>{641bf23b-fbe8-49d8-8181-fd22750c3d06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PKB\Storage">
+      <UniqueIdentifier>{85c7266d-33cd-497a-a9b3-b968f145c140}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PKB\Storage\RelationshipStorages">
+      <UniqueIdentifier>{9cf3a084-ec67-47c7-b9d3-7b15e0b77da4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Pattern">
+      <UniqueIdentifier>{741c41ab-e71c-4941-ba08-1165858d2812}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entity">
+      <UniqueIdentifier>{c8065543-88f3-4fdd-8bfe-71f1de0f3fd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Relationship">
+      <UniqueIdentifier>{e05758ec-1ded-40b2-96c5-8f02dda409cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Request">
+      <UniqueIdentifier>{544630dd-6cfe-48d6-b82d-7450cc519c83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TypeAlias">
+      <UniqueIdentifier>{5c5ccf85-497d-4d91-968b-d6f135aa0c79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Request">
+      <UniqueIdentifier>{5fc53ef6-4128-42d8-a4f0-b13596ab1c35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Definitions">
+      <UniqueIdentifier>{701517da-108b-42de-9f04-b9e2b0c9b1d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\QP\QueryExceptions">
+      <UniqueIdentifier>{91bf7e98-92be-484e-8518-34cea52b0756}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\QP\Table">
+      <UniqueIdentifier>{65f3f599-5853-4dd1-934d-5ece7c60e623}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\QP\QueryEvaluator">
+      <UniqueIdentifier>{f819030f-cd46-440d-b98b-23fe335bbbca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\QP\QueryObject">
+      <UniqueIdentifier>{35e58b18-d367-4ad3-bd2b-26eee5f3162f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\QP\QueryObject">
+      <UniqueIdentifier>{1e7a8701-31af-4f23-9e08-674c475b8f92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\QP\QueryEvaluator">
+      <UniqueIdentifier>{3fd569e1-306d-46a4-8ab5-f3794cdcb130}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\QP\QueryExceptions">
+      <UniqueIdentifier>{9f6c0441-8f3b-4c54-83c3-8261b3123008}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\QP\Table">
+      <UniqueIdentifier>{777d0fd5-bb29-4520-be00-c93d43b1cb15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CFG">
+      <UniqueIdentifier>{ed5f103f-3322-4815-aa48-c5e1cac59ee1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CFG">
+      <UniqueIdentifier>{da7787d7-236a-4e46-a6b5-296e638a9856}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\QP\QueryParser">
+      <UniqueIdentifier>{bff36c49-74b7-41fd-a52c-0be8f11fb4d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\QP\QueryParser">
+      <UniqueIdentifier>{017eaf0a-fa93-4944-8d15-de10f4929e15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PKB\Storage\EntityStorages">
+      <UniqueIdentifier>{4b82b060-7854-4023-8ce5-1b5db574f6a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PKB\Storage\PatternStorages">
+      <UniqueIdentifier>{a36adaaf-b6c1-4f18-9098-d5423bdf4bee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Request\GetRequests">
+      <UniqueIdentifier>{7cabac5c-fa33-41c1-96d7-2f80b7f53c3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Request\GetRequests\GetEntityRequest">
+      <UniqueIdentifier>{21606fe9-bab3-4c3b-9b10-159c72eb864c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Request\GetRequests\GetPatternRequest">
+      <UniqueIdentifier>{60a36d77-d0d3-4bf9-a2ea-6fba89b9b066}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Request\GetRequests\GetRelationshipRequest">
+      <UniqueIdentifier>{0911893c-9d96-48c7-a29c-3b60187e0f2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Request\InsertRequests">
+      <UniqueIdentifier>{fa3e047d-c573-4332-a066-0c4c745ee643}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Request\InsertRequests\InsertEntityRequests">
+      <UniqueIdentifier>{c86c0fef-42cb-4de0-8728-45428e67a7b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Request\InsertRequests\InsertPatternRequests">
+      <UniqueIdentifier>{9aa2ca9d-b43d-4d37-9e9e-498ad2ad85b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Request\InsertRequests\InsertRelationshipRequests">
+      <UniqueIdentifier>{2fd43bc1-2099-40a3-bb6f-26322dbeb6cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PKB\Storage\EntityStorages">
+      <UniqueIdentifier>{aa608577-8b61-43d3-9db2-4ed06b3fc355}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PKB\Storage\PatternStorages">
+      <UniqueIdentifier>{84c9cb2c-4b4c-4e27-8337-8b8e53c88261}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Request\InsertRequests">
+      <UniqueIdentifier>{0dfe4f10-4ead-41cb-8382-6750a5f29196}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Request\GetRequests">
+      <UniqueIdentifier>{aebf45b7-4365-4340-9640-136ba538e460}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Request\GetRequests\GetEntityRequests">
+      <UniqueIdentifier>{fce00d61-04d3-4212-9517-03bd1a00f6de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Request\GetRequests\GetPatternRequests">
+      <UniqueIdentifier>{88305b8c-190d-4ad7-a3d3-a7104ec491c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Request\GetRequests\GetRelationshipRequests">
+      <UniqueIdentifier>{2f488fb3-948d-4de7-adbe-ca7e60deb810}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Request\InsertRequests\InsertEntityRequest">
+      <UniqueIdentifier>{494efaf3-c9f8-4210-a57d-7029a263f136}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Request\InsertRequests\InsertPatternRequest">
+      <UniqueIdentifier>{153c9bfb-d26b-4b7f-9964-60eddc783cab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Request\InsertRequests\InsertRelationshipRequest">
+      <UniqueIdentifier>{2bb620dd-6a07-4940-9787-cc1d2fcfad22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Optimizer">
+      <UniqueIdentifier>{f31c00a8-dcd2-449d-b1b5-57b58758b7b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Optimizer">
+      <UniqueIdentifier>{1b454dbe-e809-48b6-9cdb-4c8424e5b704}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\QP\QueryEvaluator\AffectsTAlgorithm">
+      <UniqueIdentifier>{bb504549-51fb-4f73-9051-d43af523646f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\QP\QueryEvaluator\AffectsAlgorithm">
+      <UniqueIdentifier>{f505dae2-87f3-4647-85e5-444e7308ddd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\QP\QueryEvaluator\AffectsAlgorithm">
+      <UniqueIdentifier>{c052caf9-cfcd-4092-b50e-624c7cb32fba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\QP\QueryEvaluator\AffectsTAlgorithm">
+      <UniqueIdentifier>{83bcad17-b3bf-4e7e-b9f2-67bdca94a245}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SP\DesignExtractor\EntityExtractor">
+      <UniqueIdentifier>{96800687-5b35-43d5-a456-7a7f200d1f47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SP\DesignExtractor\RelationshipExtractor">
+      <UniqueIdentifier>{5eb1e85d-1eaa-4fe8-8ac3-9001d8e4c8dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SP\DesignExtractor\PatternExtractor">
+      <UniqueIdentifier>{f2012a54-bcce-435e-9be1-3a40b5dc9344}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SP\DesignExtractor\EntityExtractor">
+      <UniqueIdentifier>{df96412e-3f52-4a46-9eac-97d42c3b8757}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SP\DesignExtractor\RelationshipExtractor">
+      <UniqueIdentifier>{a95fe5d4-4798-45c8-869b-d42b9af563e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SP\DesignExtractor\PatternExtractor">
+      <UniqueIdentifier>{cb50d3bb-60f7-47d6-980c-dbdf1f037085}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\QP\QueryManager.cpp">
+      <Filter>Source Files\QP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\DesignExtractor.cpp">
+      <Filter>Source Files\SP\DesignExtractor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\DesignExtractorUtil.cpp">
+      <Filter>Source Files\SP\DesignExtractor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Entity\Entity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\SPManager.cpp">
+      <Filter>Source Files\SP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\Table\Table.cpp">
+      <Filter>Source Files\QP\Table</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryObject\Declaration.cpp">
+      <Filter>Source Files\QP\QueryObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryObject\DesignEntity.cpp">
+      <Filter>Source Files\QP\QueryObject</Filter>
+    </ClCompile>
+	<ClCompile Include="..\source\QP\QueryObject\DesignEntityFactory.cpp">
+		<Filter>Source Files\QP\QueryObject</Filter>
+	</ClCompile>
+    <ClCompile Include="..\source\QP\QueryObject\PatternClause.cpp">
+      <Filter>Source Files\QP\QueryObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\QueryEvaluator.cpp">
+      <Filter>Source Files\QP\QueryEvaluator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryObject\QueryObject.cpp">
+      <Filter>Source Files\QP\QueryObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\SuchThatEvaluator.cpp">
+      <Filter>Source Files\QP\QueryEvaluator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryObject\SuchThatClause.cpp">
+      <Filter>Source Files\QP\QueryObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Entity\Entity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryObject\WithClause.cpp">
+      <Filter>Source Files\QP\QueryObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryObject\Clause.cpp">
+      <Filter>Source Files\QP\QueryObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryObject\Variants\StmtNo.cpp">
+      <Filter>Source Files\QP\QueryObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryObject\Variants\Integer.cpp">
+      <Filter>Source Files\QP\QueryObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryObject\Variants\StringExp.cpp">
+      <Filter>Source Files\QP\QueryObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryObject\Variants\SubExp.cpp">
+      <Filter>Source Files\QP\QueryObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryObject\Variants\WildCard.cpp">
+      <Filter>Source Files\QP\QueryObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryObject\SelectObject.cpp">
+      <Filter>Source Files\QP\QueryObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\QueryUtil.cpp">
+      <Filter>Source Files\QP\QueryEvaluator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\ResultConsolidator.cpp">
+      <Filter>Source Files\QP\QueryEvaluator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\ParentEvaluator.cpp">
+      <Filter>Source Files\QP\QueryEvaluator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\ModifiesEvaluator.cpp">
+      <Filter>Source Files\QP\QueryEvaluator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\UsesEvaluator.cpp">
+      <Filter>Source Files\QP\QueryEvaluator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\CallsEvaluator.cpp">
+      <Filter>Source Files\QP\QueryEvaluator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\CallsTEvaluator.cpp">
+      <Filter>Source Files\QP\QueryEvaluator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\PatternAssignEvaluator.cpp">
+      <Filter>Source Files\QP\QueryEvaluator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Entity\Entity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\Parser\ExpressionParser.cpp">
+      <Filter>Source Files\SP\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\Parser\ParseException.cpp">
+      <Filter>Source Files\SP\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\Parser\Parser.cpp">
+      <Filter>Source Files\SP\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\Parser\Operator.cpp">
+      <Filter>Source Files\SP\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\CfgExtractor.cpp">
+      <Filter>Source Files\SP\DesignExtractor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\Validator\CallValidator.cpp">
+      <Filter>Source Files\SP\Validator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\Validator\CondValidator.cpp">
+      <Filter>Source Files\SP\Validator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\Validator\ExpValidator.cpp">
+      <Filter>Source Files\SP\Validator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\Validator\Validator.cpp">
+      <Filter>Source Files\SP\Validator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\Tokenizer\SPTokenizer.cpp">
+      <Filter>Source Files\SP\Tokenizer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\Tokenizer\Token.cpp">
+      <Filter>Source Files\SP\Tokenizer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\Tokenizer\TokenIterator.cpp">
+      <Filter>Source Files\SP\Tokenizer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\AST\ExpressionNode.cpp">
+      <Filter>Source Files\SP\AST</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\AST\StatementNode.cpp">
+      <Filter>Source Files\SP\AST</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\AST\ConditionalExpressionNode.cpp">
+      <Filter>Source Files\SP\AST</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\Manager\EntityManager.cpp">
+      <Filter>Source Files\PKB\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\Manager\PatternManager.cpp">
+      <Filter>Source Files\PKB\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\Storage\PatternStorage.cpp">
+      <Filter>Source Files\PKB\Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Relationship\Relationship.cpp">
+      <Filter>Source Files\Relationship</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\Manager\RelationshipManager.cpp">
+      <Filter>Source Files\PKB\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Entity\Entity.cpp">
+      <Filter>Source Files\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\Storage\RelationshipStorages\CallsStorage.cpp">
+      <Filter>Source Files\PKB\Storage\RelationshipStorages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\Storage\RelationshipStorages\NextStorage.cpp">
+      <Filter>Source Files\PKB\Storage\RelationshipStorages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\Storage\RelationshipStorages\ParentStorage.cpp">
+      <Filter>Source Files\PKB\Storage\RelationshipStorages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\Storage\RelationshipStorages\FollowsStorage.cpp">
+      <Filter>Source Files\PKB\Storage\RelationshipStorages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\Storage\RelationshipStorages\Util.cpp">
+      <Filter>Source Files\PKB\Storage\RelationshipStorages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\Storage\RelationshipStorages\ModifiesStorage.cpp">
+      <Filter>Source Files\PKB\Storage\RelationshipStorages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\Storage\RelationshipStorages\UsesStorage.cpp">
+      <Filter>Source Files\PKB\Storage\RelationshipStorages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryExceptions\QuerySemanticException.cpp">
+      <Filter>Source Files\QP\QueryExceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryExceptions\QuerySyntaxException.cpp">
+      <Filter>Source Files\QP\QueryExceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CFG\Cfg.cpp">
+      <Filter>Source Files\CFG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\RelationshipEvaluator.cpp">
+      <Filter>Source Files\QP\QueryEvaluator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\FollowsEvaluator.cpp">
+      <Filter>Source Files\QP\QueryEvaluator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\FollowsTEvaluator.cpp">
+      <Filter>Source Files\QP\QueryEvaluator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\NextEvaluator.cpp">
+      <Filter>Source Files\QP\QueryEvaluator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\NextTEvaluator.cpp">
+      <Filter>Source Files\QP\QueryEvaluator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\ParentTEvaluator.cpp">
+      <Filter>Source Files\QP\QueryEvaluator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\PatternEvaluator.cpp">
+      <Filter>Source Files\QP\QueryEvaluator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\PatternIfEvaluator.cpp">
+      <Filter>Source Files\QP\QueryEvaluator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\PatternWhileEvaluator.cpp">
+      <Filter>Source Files\QP\QueryEvaluator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\WithEvaluator.cpp">
+      <Filter>Source Files\QP\QueryEvaluator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryObject\DesignAbstraction.cpp">
+      <Filter>Source Files\QP\QueryObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryObject\DesignAbstractionFactory.cpp">
+      <Filter>Source Files\QP\QueryObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryParser\DeclarationsParser.cpp">
+      <Filter>Source Files\QP\QueryParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryParser\PatternParser.cpp">
+      <Filter>Source Files\QP\QueryParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryParser\SelectParser.cpp">
+      <Filter>Source Files\QP\QueryParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryParser\SuchThatParser.cpp">
+      <Filter>Source Files\QP\QueryParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryParser\WithParser.cpp">
+      <Filter>Source Files\QP\QueryParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\Parser\StatementParser.cpp">
+      <Filter>Source Files\SP\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\Parser\ParserUtil.cpp">
+      <Filter>Source Files\SP\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\Parser\TerminalParser.cpp">
+      <Filter>Source Files\SP\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\Parser\ConditionalExpressionParser.cpp">
+      <Filter>Source Files\SP\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\AST\AST.cpp">
+      <Filter>Source Files\SP\AST</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\PKB.cpp">
+      <Filter>Source Files\PKB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\GetFacade.cpp">
+      <Filter>Source Files\PKB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\InsertFacade.cpp">
+      <Filter>Source Files\PKB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\AffectsEvaluator.cpp">
+      <Filter>Source Files\QP\QueryEvaluator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Request\GetCFGRequest.cpp">
+      <Filter>Source Files\Request</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\Storage\CFGStorage.cpp">
+      <Filter>Source Files\PKB\Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Pattern\Pattern.cpp">
+      <Filter>Source Files\Pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\AffectsUtil.cpp">
+      <Filter>Source Files\QP\QueryEvaluator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QuerySplitter\QuerySplitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryParser\QueryParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\Storage\EntityStorage.cpp">
+      <Filter>Source Files\PKB\Storage\EntityStorages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\Storage\PatternStorage.cpp">
+      <Filter>Source Files\PKB\Storage\PatternStorages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\Storage\RelationshipStorage.cpp">
+      <Filter>Source Files\PKB\Storage\RelationshipStorages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\Storage\EntityStorages\ConstantEntityStorage.cpp">
+      <Filter>Source Files\PKB\Storage\EntityStorages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\Storage\EntityStorages\ProcedureEntityStorage.cpp">
+      <Filter>Source Files\PKB\Storage\EntityStorages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\Storage\EntityStorages\StatementEntityStorage.cpp">
+      <Filter>Source Files\PKB\Storage\EntityStorages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\Storage\EntityStorages\VariableEntityStorage.cpp">
+      <Filter>Source Files\PKB\Storage\EntityStorages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\Storage\PatternStorages\AssignPatternStorage.cpp">
+      <Filter>Source Files\PKB\Storage\PatternStorages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\Storage\PatternStorages\IfPatternStorage.cpp">
+      <Filter>Source Files\PKB\Storage\PatternStorages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\Storage\PatternStorages\WhilePatternStorage.cpp">
+      <Filter>Source Files\PKB\Storage\PatternStorages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Request\InsertRequests\InsertPatternRequests\InsertAssignPatternRequest.cpp">
+      <Filter>Source Files\Request\InsertRequests\InsertPatternRequest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Request\InsertRequests\InsertPatternRequests\InsertIfPatternRequest.cpp">
+      <Filter>Source Files\Request\InsertRequests\InsertPatternRequest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Request\InsertRequests\InsertPatternRequests\InsertWhilePatternRequest.cpp">
+      <Filter>Source Files\Request\InsertRequests\InsertPatternRequest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Request\GetRequests\GetPatternRequests\GetAssignPatternRequest.cpp">
+      <Filter>Source Files\Request\GetRequests\GetPatternRequests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Request\GetRequests\GetPatternRequests\GetIfPatternRequest.cpp">
+      <Filter>Source Files\Request\GetRequests\GetPatternRequests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Request\GetRequests\GetPatternRequests\GetWhilePatternRequest.cpp">
+      <Filter>Source Files\Request\GetRequests\GetPatternRequests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Request\InsertRequests\InsertEntityRequests\InsertConstantEntityRequest.cpp">
+      <Filter>Source Files\Request\InsertRequests\InsertEntityRequest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Request\InsertRequests\InsertEntityRequests\InsertProcedureEntityRequest.cpp">
+      <Filter>Source Files\Request\InsertRequests\InsertEntityRequest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Request\InsertRequests\InsertEntityRequests\InsertStatementEntityRequest.cpp">
+      <Filter>Source Files\Request\InsertRequests\InsertEntityRequest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Request\InsertRequests\InsertEntityRequests\InsertVariableEntityRequest.cpp">
+      <Filter>Source Files\Request\InsertRequests\InsertEntityRequest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Request\GetRequests\GetEntityRequests\GetConstantEntityRequest.cpp">
+      <Filter>Source Files\Request\GetRequests\GetEntityRequests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Request\GetRequests\GetEntityRequests\GetEntityRequest.cpp">
+      <Filter>Source Files\Request\GetRequests\GetEntityRequests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Request\GetRequests\GetEntityRequests\GetProcedureEntityRequest.cpp">
+      <Filter>Source Files\Request\GetRequests\GetEntityRequests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Request\GetRequests\GetEntityRequests\GetStatementEntityRequest.cpp">
+      <Filter>Source Files\Request\GetRequests\GetEntityRequests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Request\GetRequests\GetEntityRequests\GetVariableEntityRequest.cpp">
+      <Filter>Source Files\Request\GetRequests\GetEntityRequests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Request\GetRequests\GetRelationshipRequests\GetCallsRequest.cpp">
+      <Filter>Source Files\Request\GetRequests\GetRelationshipRequests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Request\GetRequests\GetRelationshipRequests\GetFollowsRequest.cpp">
+      <Filter>Source Files\Request\GetRequests\GetRelationshipRequests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Request\GetRequests\GetRelationshipRequests\GetModifiesRequest.cpp">
+      <Filter>Source Files\Request\GetRequests\GetRelationshipRequests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Request\GetRequests\GetRelationshipRequests\GetNextRequest.cpp">
+      <Filter>Source Files\Request\GetRequests\GetRelationshipRequests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Request\GetRequests\GetRelationshipRequests\GetParentRequest.cpp">
+      <Filter>Source Files\Request\GetRequests\GetRelationshipRequests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Request\GetRequests\GetRelationshipRequests\GetRelationshipRequest.cpp">
+      <Filter>Source Files\Request\GetRequests\GetRelationshipRequests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Request\GetRequests\GetRelationshipRequests\GetUsesRequest.cpp">
+      <Filter>Source Files\Request\GetRequests\GetRelationshipRequests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Request\InsertRequests\InsertRelationshipRequests\InsertCallsRequest.cpp">
+      <Filter>Source Files\Request\InsertRequests\InsertRelationshipRequest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Request\InsertRequests\InsertRelationshipRequests\InsertFollowsRequest.cpp">
+      <Filter>Source Files\Request\InsertRequests\InsertRelationshipRequest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Request\InsertRequests\InsertRelationshipRequests\InsertModifiesRequest.cpp">
+      <Filter>Source Files\Request\InsertRequests\InsertRelationshipRequest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Request\InsertRequests\InsertRelationshipRequests\InsertParentRequest.cpp">
+      <Filter>Source Files\Request\InsertRequests\InsertRelationshipRequest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Request\InsertRequests\InsertRelationshipRequests\InsertUsesRequest.cpp">
+      <Filter>Source Files\Request\InsertRequests\InsertRelationshipRequest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Optimizer\Optimizer.cpp">
+      <Filter>Source Files\Optimizer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryParser\QueryParser.cpp">
+      <Filter>Source Files\QP\QueryParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryParser\QueryParserResult.cpp">
+      <Filter>Source Files\QP\QueryParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QuerySplitter\QuerySplitter.cpp">
+      <Filter>Source Files\QP\QueryParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryObject\ClauseGroup.cpp">
+      <Filter>Source Files\QP\QueryObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\AffectsTEvaluator.cpp">
+      <Filter>Source Files\QP\QueryEvaluator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\AffectsTAlgorithm\AffectsTStmtStmt.cpp">
+      <Filter>Source Files\QP\QueryEvaluator\AffectsTAlgorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\AffectsTAlgorithm\AffectsTStmtSyn.cpp">
+      <Filter>Source Files\QP\QueryEvaluator\AffectsTAlgorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\AffectsTAlgorithm\AffectsTSynStmt.cpp">
+      <Filter>Source Files\QP\QueryEvaluator\AffectsTAlgorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\AffectsAlgorithm\AffectsSynSyn.cpp">
+      <Filter>Source Files\QP\QueryEvaluator\AffectsAlgorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\AffectsAlgorithm\AffectsWildWild.cpp">
+      <Filter>Source Files\QP\QueryEvaluator\AffectsAlgorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\AffectsAlgorithm\AffectsStmtStmt.cpp">
+      <Filter>Source Files\QP\QueryEvaluator\AffectsAlgorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\AffectsAlgorithm\AffectsStmtWild.cpp">
+      <Filter>Source Files\QP\QueryEvaluator\AffectsAlgorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\AffectsAlgorithm\AffectsStmtSyn.cpp">
+      <Filter>Source Files\QP\QueryEvaluator\AffectsAlgorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\AffectsAlgorithm\AffectsSynStmt.cpp">
+      <Filter>Source Files\QP\QueryEvaluator\AffectsAlgorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\AffectsTAlgorithm\AffectsTSynSyn.cpp">
+      <Filter>Source Files\QP\QueryEvaluator\AffectsTAlgorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\AffectsAlgorithm\AffectsWildStmt.cpp">
+      <Filter>Source Files\QP\QueryEvaluator\AffectsAlgorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Request\GetRequests\GetEntityRequests\GetAssignStatementEntityRequest.cpp">
+      <Filter>Source Files\Request\GetRequests\GetEntityRequests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Request\GetRequests\GetEntityRequests\GetCallStatementEntityRequest.cpp">
+      <Filter>Source Files\Request\GetRequests\GetEntityRequests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Request\GetRequests\GetEntityRequests\GetIfStatementEntityRequest.cpp">
+      <Filter>Source Files\Request\GetRequests\GetEntityRequests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Request\GetRequests\GetEntityRequests\GetPrintStatementEntityRequest.cpp">
+      <Filter>Source Files\Request\GetRequests\GetEntityRequests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Request\GetRequests\GetEntityRequests\GetReadStatementEntityRequest.cpp">
+      <Filter>Source Files\Request\GetRequests\GetEntityRequests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Request\GetRequests\GetEntityRequests\GetWhileStatementEntityRequest.cpp">
+      <Filter>Source Files\Request\GetRequests\GetEntityRequests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\RelationshipExtractor\CallsExtractor.cpp">
+      <Filter>Source Files\SP\DesignExtractor\RelationshipExtractor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\EntityExtractor\EntityExtractor.cpp">
+      <Filter>Source Files\SP\DesignExtractor\EntityExtractor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\RelationshipExtractor\FollowsExtractor.cpp">
+      <Filter>Source Files\SP\DesignExtractor\RelationshipExtractor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\RelationshipExtractor\ModifiesExtractor.cpp">
+      <Filter>Source Files\SP\DesignExtractor\RelationshipExtractor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\RelationshipExtractor\ParentExtractor.cpp">
+      <Filter>Source Files\SP\DesignExtractor\RelationshipExtractor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\RelationshipExtractor\UsesExtractor.cpp">
+      <Filter>Source Files\SP\DesignExtractor\RelationshipExtractor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\PatternExtractor\PatternExtractor.cpp">
+      <Filter>Source Files\SP\DesignExtractor\PatternExtractor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\EntityExtractor\ProcedureExtractor.cpp">
+      <Filter>Source Files\SP\DesignExtractor\EntityExtractor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\EntityExtractor\StatementExtractor.cpp">
+      <Filter>Source Files\SP\DesignExtractor\EntityExtractor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\EntityExtractor\VariableExtractor.cpp">
+      <Filter>Source Files\SP\DesignExtractor\EntityExtractor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\EntityExtractor\ConstantExtractor.cpp">
+      <Filter>Source Files\SP\DesignExtractor\EntityExtractor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\RelationshipExtractor\RelationshipExtractor.cpp">
+      <Filter>Source Files\SP\DesignExtractor\RelationshipExtractor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\PatternExtractor\AssignPatternExtractor.cpp">
+      <Filter>Source Files\SP\DesignExtractor\PatternExtractor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\PatternExtractor\IfPatternExtractor.cpp">
+      <Filter>Source Files\SP\DesignExtractor\PatternExtractor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\PatternExtractor\WhilePatternExtractor.cpp">
+      <Filter>Source Files\SP\DesignExtractor\PatternExtractor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Request\GetRequests\GetPatternRequests\GetPatternRequest.cpp">
+      <Filter>Source Files\Request\GetRequests\GetPatternRequests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryParser\AttrRef.cpp">
+      <Filter>Source Files\QP\QueryParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\Validator\ValidatorUtil.cpp">
+      <Filter>Source Files\SP\Validator</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\QP\QueryManager.h">
+      <Filter>Header Files\QP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\DesignExtractor.h">
+      <Filter>Header Files\SP\DesignExtractor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\Parser\ExpressionParser.h">
+      <Filter>Header Files\SP\Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\Parser\ParseException.h">
+      <Filter>Header Files\SP\Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\Parser\Parser.h">
+      <Filter>Header Files\SP\Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\Parser\Operator.h">
+      <Filter>Header Files\SP\Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\DesignExtractorUtil.h">
+      <Filter>Header Files\SP\DesignExtractor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\CfgExtractor.h">
+      <Filter>Header Files\SP\DesignExtractor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\Validator\CallValidator.h">
+      <Filter>Header Files\SP\Validator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\Validator\CondValidator.h">
+      <Filter>Header Files\SP\Validator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\Validator\ExpValidator.h">
+      <Filter>Header Files\SP\Validator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\Validator\Validator.h">
+      <Filter>Header Files\SP\Validator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\SPManager.h">
+      <Filter>Header Files\SP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\Tokenizer\SPTokenizer.h">
+      <Filter>Header Files\SP\Tokenizer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\Tokenizer\Token.h">
+      <Filter>Header Files\SP\Tokenizer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\Validator\ValidatorUtil.h">
+      <Filter>Header Files\SP\Validator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\Tokenizer\TokenIterator.h">
+      <Filter>Header Files\SP\Tokenizer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\AST\ExpressionNode.h">
+      <Filter>Header Files\SP\AST</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\AST\StatementNode.h">
+      <Filter>Header Files\SP\AST</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\AST\BaseNode.h">
+      <Filter>Header Files\SP\AST</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\AST\ConditionalExpressionNode.h">
+      <Filter>Header Files\SP\AST</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Hash\Hash.h">
+      <Filter>Header Files\Hash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Pattern\Pattern.h">
+      <Filter>Header Files\Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Relationship\Relationship.h">
+      <Filter>Header Files\Relationship</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Entity\Entity.h">
+      <Filter>Header Files\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\Manager\EntityManager.h">
+      <Filter>Header Files\PKB\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\Manager\RelationshipManager.h">
+      <Filter>Header Files\PKB\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\Manager\PatternManager.h">
+      <Filter>Header Files\PKB\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\Storage\RelationshipStorages\FollowsStorage.h">
+      <Filter>Header Files\PKB\Storage\RelationshipStorages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\Storage\RelationshipStorages\CallsStorage.h">
+      <Filter>Header Files\PKB\Storage\RelationshipStorages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\Storage\RelationshipStorages\ModifiesStorage.h">
+      <Filter>Header Files\PKB\Storage\RelationshipStorages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\Storage\RelationshipStorages\NextStorage.h">
+      <Filter>Header Files\PKB\Storage\RelationshipStorages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\Storage\RelationshipStorages\ParentStorage.h">
+      <Filter>Header Files\PKB\Storage\RelationshipStorages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\Request.h">
+      <Filter>Header Files\Request</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\TypeAlias\TypeAlias.h">
+      <Filter>Header Files\TypeAlias</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\Storage\RelationshipStorages\UsesStorage.h">
+      <Filter>Header Files\PKB\Storage\RelationshipStorages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\Storage\RelationshipStorages\Util.h">
+      <Filter>Header Files\PKB\Storage\RelationshipStorages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Definitions\Definitions.h">
+      <Filter>Header Files\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryExceptions\QuerySemanticException.h">
+      <Filter>Header Files\QP\QueryExceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\CFG\Cfg.h">
+      <Filter>Header Files\CFG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\Table\Table.h">
+      <Filter>Header Files\QP\Table</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\CallsEvaluator.h">
+      <Filter>Header Files\QP\QueryEvaluator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\CallsTEvaluator.h">
+      <Filter>Header Files\QP\QueryEvaluator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\ModifiesEvaluator.h">
+      <Filter>Header Files\QP\QueryEvaluator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\ParentEvaluator.h">
+      <Filter>Header Files\QP\QueryEvaluator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\PatternAssignEvaluator.h">
+      <Filter>Header Files\QP\QueryEvaluator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\QueryEvaluator.h">
+      <Filter>Header Files\QP\QueryEvaluator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\QueryUtil.h">
+      <Filter>Header Files\QP\QueryEvaluator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\ResultConsolidator.h">
+      <Filter>Header Files\QP\QueryEvaluator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\SuchThatEvaluator.h">
+      <Filter>Header Files\QP\QueryEvaluator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\UsesEvaluator.h">
+      <Filter>Header Files\QP\QueryEvaluator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\FollowsEvaluator.h">
+      <Filter>Header Files\QP\QueryEvaluator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\FollowsTEvaluator.h">
+      <Filter>Header Files\QP\QueryEvaluator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\NextEvaluator.h">
+      <Filter>Header Files\QP\QueryEvaluator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\NextTEvaluator.h">
+      <Filter>Header Files\QP\QueryEvaluator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\ParentTEvaluator.h">
+      <Filter>Header Files\QP\QueryEvaluator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\PatternEvaluator.h">
+      <Filter>Header Files\QP\QueryEvaluator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\PatternIfEvaluator.h">
+      <Filter>Header Files\QP\QueryEvaluator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\PatternWhileEvaluator.h">
+      <Filter>Header Files\QP\QueryEvaluator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\RelationshipEvaluator.h">
+      <Filter>Header Files\QP\QueryEvaluator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\WithEvaluator.h">
+      <Filter>Header Files\QP\QueryEvaluator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryObject\Declaration.h">
+      <Filter>Header Files\QP\QueryObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryObject\DesignEntity.h">
+      <Filter>Header Files\QP\QueryObject</Filter>
+    </ClInclude>
+	<ClInclude Include="..\source\QP\QueryObject\DesignEntityFactory.h">
+		<Filter>Header Files\QP\QueryObject</Filter>
+	</ClInclude>
+    <ClInclude Include="..\source\QP\QueryObject\PatternClause.h">
+      <Filter>Header Files\QP\QueryObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryObject\QueryObject.h">
+      <Filter>Header Files\QP\QueryObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryObject\SelectObject.h">
+      <Filter>Header Files\QP\QueryObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryObject\SuchThatClause.h">
+      <Filter>Header Files\QP\QueryObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryObject\WithClause.h">
+      <Filter>Header Files\QP\QueryObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryObject\Clause.h">
+      <Filter>Header Files\QP\QueryObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryObject\Variants\StmtNo.h">
+      <Filter>Header Files\QP\QueryObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryObject\Variants\Integer.h">
+      <Filter>Header Files\QP\QueryObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryObject\Variants\StringExp.h">
+      <Filter>Header Files\QP\QueryObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryObject\Variants\SubExp.h">
+      <Filter>Header Files\QP\QueryObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryObject\Variants\WildCard.h">
+      <Filter>Header Files\QP\QueryObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryObject\Argument.h">
+      <Filter>Header Files\QP\QueryObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryObject\DesignAbstraction.h">
+      <Filter>Header Files\QP\QueryObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryObject\DesignAbstractionFactory.h">
+      <Filter>Header Files\QP\QueryObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryParser\DeclarationsParser.h">
+      <Filter>Header Files\QP\QueryParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryParser\PatternParser.h">
+      <Filter>Header Files\QP\QueryParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryParser\SelectParser.h">
+      <Filter>Header Files\QP\QueryParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryParser\SuchThatParser.h">
+      <Filter>Header Files\QP\QueryParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryParser\WithParser.h">
+      <Filter>Header Files\QP\QueryParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\Parser\StatementParser.h">
+      <Filter>Header Files\SP\Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\Parser\ParserUtil.h">
+      <Filter>Header Files\SP\Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\Parser\TerminalParser.h">
+      <Filter>Header Files\SP\Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\Parser\ConditionalExpressionParser.h">
+      <Filter>Header Files\SP\Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\AST\AST.h">
+      <Filter>Header Files\SP\AST</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\PKB.h">
+      <Filter>Header Files\PKB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\GetFacade.h">
+      <Filter>Header Files\PKB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\InsertFacade.h">
+      <Filter>Header Files\PKB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\AffectsEvaluator.h">
+      <Filter>Header Files\QP\QueryEvaluator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\GetCFGRequest.h">
+      <Filter>Header Files\Request</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\Storage\CFGStorage.h">
+      <Filter>Header Files\PKB\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryExceptions\QuerySyntaxException.h">
+      <Filter>Header Files\QP\QueryExceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\AffectsUtil.h">
+      <Filter>Header Files\QP\QueryEvaluator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QuerySplitter\QuerySplitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryParser\QueryParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\Storage\EntityStorages\VariableEntityStorage.h">
+      <Filter>Header Files\PKB\Storage\EntityStorages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\Storage\EntityStorages\StatementEntityStorage.h">
+      <Filter>Header Files\PKB\Storage\EntityStorages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\Storage\EntityStorages\ProcedureEntityStorage.h">
+      <Filter>Header Files\PKB\Storage\EntityStorages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\Storage\EntityStorages\ConstantEntityStorage.h">
+      <Filter>Header Files\PKB\Storage\EntityStorages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\Storage\EntityStorage.h">
+      <Filter>Header Files\PKB\Storage\EntityStorages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\Storage\RelationshipStorage.h">
+      <Filter>Header Files\PKB\Storage\RelationshipStorages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\Storage\PatternStorage.h">
+      <Filter>Header Files\PKB\Storage\PatternStorages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\Storage\Storage.h">
+      <Filter>Header Files\PKB\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\Storage\PatternStorages\WhilePatternStorage.h">
+      <Filter>Header Files\PKB\Storage\PatternStorages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\Storage\PatternStorages\AssignPatternStorage.h">
+      <Filter>Header Files\PKB\Storage\PatternStorages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\Storage\PatternStorages\IfPatternStorage.h">
+      <Filter>Header Files\PKB\Storage\PatternStorages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\GetRequests\GetEntityRequests\GetEntityRequest.h">
+      <Filter>Header Files\Request\GetRequests\GetEntityRequest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\GetRequests\GetEntityRequests\GetConstantEntityRequest.h">
+      <Filter>Header Files\Request\GetRequests\GetEntityRequest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\GetRequests\GetEntityRequests\GetProcedureEntityRequest.h">
+      <Filter>Header Files\Request\GetRequests\GetEntityRequest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\GetRequests\GetEntityRequests\GetStatementEntityRequest.h">
+      <Filter>Header Files\Request\GetRequests\GetEntityRequest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\GetRequests\GetEntityRequests\GetVariableEntityRequest.h">
+      <Filter>Header Files\Request\GetRequests\GetEntityRequest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\GetRequests\GetRelationshipRequests\GetCallsRequest.h">
+      <Filter>Header Files\Request\GetRequests\GetRelationshipRequest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\GetRequests\GetRelationshipRequests\GetFollowsRequest.h">
+      <Filter>Header Files\Request\GetRequests\GetRelationshipRequest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\GetRequests\GetRelationshipRequests\GetModifiesRequest.h">
+      <Filter>Header Files\Request\GetRequests\GetRelationshipRequest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\GetRequests\GetRelationshipRequests\GetNextRequest.h">
+      <Filter>Header Files\Request\GetRequests\GetRelationshipRequest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\GetRequests\GetRelationshipRequests\GetParentRequest.h">
+      <Filter>Header Files\Request\GetRequests\GetRelationshipRequest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\GetRequests\GetRelationshipRequests\GetRelationshipRequest.h">
+      <Filter>Header Files\Request\GetRequests\GetRelationshipRequest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\GetRequests\GetPatternRequests\GetPatternRequest.h">
+      <Filter>Header Files\Request\GetRequests\GetPatternRequest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\GetRequests\GetRelationshipRequests\GetUsesRequest.h">
+      <Filter>Header Files\Request\GetRequests\GetRelationshipRequest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\InsertRequests\InsertEntityRequests\InsertConstantEntityRequest.h">
+      <Filter>Header Files\Request\InsertRequests\InsertEntityRequests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\InsertRequests\InsertEntityRequests\InsertProcedureEntityRequest.h">
+      <Filter>Header Files\Request\InsertRequests\InsertEntityRequests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\InsertRequests\InsertEntityRequests\InsertStatementEntityRequest.h">
+      <Filter>Header Files\Request\InsertRequests\InsertEntityRequests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\InsertRequests\InsertEntityRequests\InsertVariableEntityRequest.h">
+      <Filter>Header Files\Request\InsertRequests\InsertEntityRequests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\InsertRequests\InsertEntityRequests\InsertEntityRequest.h">
+      <Filter>Header Files\Request\InsertRequests\InsertEntityRequests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\InsertRequests\InsertPatternRequests\InsertPatternRequest.h">
+      <Filter>Header Files\Request\InsertRequests\InsertPatternRequests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\InsertRequests\InsertRelationshipRequests\InsertCallsRequest.h">
+      <Filter>Header Files\Request\InsertRequests\InsertRelationshipRequests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\InsertRequests\InsertRelationshipRequests\InsertFollowsRequest.h">
+      <Filter>Header Files\Request\InsertRequests\InsertRelationshipRequests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\InsertRequests\InsertRelationshipRequests\InsertModifiesRequest.h">
+      <Filter>Header Files\Request\InsertRequests\InsertRelationshipRequests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\InsertRequests\InsertRelationshipRequests\InsertParentRequest.h">
+      <Filter>Header Files\Request\InsertRequests\InsertRelationshipRequests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\InsertRequests\InsertRelationshipRequests\InsertUsesRequest.h">
+      <Filter>Header Files\Request\InsertRequests\InsertRelationshipRequests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\TypeAlias\StorageAlias.h">
+      <Filter>Header Files\TypeAlias</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Optimizer\Optimizer.h">
+      <Filter>Header Files\Optimizer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryParser\QueryParser.h">
+      <Filter>Header Files\QP\QueryParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryParser\QueryParserResult.h">
+      <Filter>Header Files\QP\QueryParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QuerySplitter\QuerySplitter.h">
+      <Filter>Header Files\QP\QueryParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryObject\ClauseGroup.h">
+      <Filter>Header Files\QP\QueryObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\AffectsTEvaluator.h">
+      <Filter>Header Files\QP\QueryEvaluator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\AffectsAlgorithm\AffectsSynSyn.h">
+      <Filter>Header Files\QP\QueryEvaluator\AffectsAlgorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\AffectsAlgorithm\AffectsWildWild.h">
+      <Filter>Header Files\QP\QueryEvaluator\AffectsAlgorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\AffectsTAlgorithm\AffectsTStmtStmt.h">
+      <Filter>Header Files\QP\QueryEvaluator\AffectsTAlgorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\AffectsTAlgorithm\AffectsTStmtSyn.h">
+      <Filter>Header Files\QP\QueryEvaluator\AffectsTAlgorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\AffectsTAlgorithm\AffectsTSynStmt.h">
+      <Filter>Header Files\QP\QueryEvaluator\AffectsTAlgorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\AffectsAlgorithm\AffectsStmtStmt.h">
+      <Filter>Header Files\QP\QueryEvaluator\AffectsAlgorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\AffectsAlgorithm\AffectsStmtWild.h">
+      <Filter>Header Files\QP\QueryEvaluator\AffectsAlgorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\AffectsAlgorithm\AffectsWildStmt.h">
+      <Filter>Header Files\QP\QueryEvaluator\AffectsAlgorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\AffectsAlgorithm\AffectsStmtSyn.h">
+      <Filter>Header Files\QP\QueryEvaluator\AffectsAlgorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\AffectsAlgorithm\AffectsSynStmt.h">
+      <Filter>Header Files\QP\QueryEvaluator\AffectsAlgorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\AffectsTAlgorithm\AffectsTSynSyn.h">
+      <Filter>Header Files\QP\QueryEvaluator\AffectsTAlgorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\GetRequests\GetEntityRequests\GetAssignStatementEntityRequest.h">
+      <Filter>Source Files\Request\GetRequests\GetEntityRequests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\GetRequests\GetEntityRequests\GetCallStatementEntityRequest.h">
+      <Filter>Source Files\Request\GetRequests\GetEntityRequests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\GetRequests\GetEntityRequests\GetIfStatementEntityRequest.h">
+      <Filter>Source Files\Request\GetRequests\GetEntityRequests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\GetRequests\GetEntityRequests\GetPrintStatementEntityRequest.h">
+      <Filter>Source Files\Request\GetRequests\GetEntityRequests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\GetRequests\GetEntityRequests\GetReadStatementEntityRequest.h">
+      <Filter>Source Files\Request\GetRequests\GetEntityRequests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\GetRequests\GetEntityRequests\GetWhileStatementEntityRequest.h">
+      <Filter>Source Files\Request\GetRequests\GetEntityRequests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\RelationshipExtractor\CallsExtractor.h">
+      <Filter>Header Files\SP\DesignExtractor\RelationshipExtractor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\EntityExtractor\EntityExtractor.h">
+      <Filter>Header Files\SP\DesignExtractor\EntityExtractor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\RelationshipExtractor\FollowsExtractor.h">
+      <Filter>Header Files\SP\DesignExtractor\RelationshipExtractor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\RelationshipExtractor\ModifiesExtractor.h">
+      <Filter>Header Files\SP\DesignExtractor\RelationshipExtractor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\RelationshipExtractor\ParentExtractor.h">
+      <Filter>Header Files\SP\DesignExtractor\RelationshipExtractor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\PatternExtractor\PatternExtractor.h">
+      <Filter>Header Files\SP\DesignExtractor\PatternExtractor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\RelationshipExtractor\UsesExtractor.h">
+      <Filter>Header Files\SP\DesignExtractor\RelationshipExtractor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\EntityExtractor\ProcedureExtractor.h">
+      <Filter>Header Files\SP\DesignExtractor\EntityExtractor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\EntityExtractor\StatementExtractor.h">
+      <Filter>Header Files\SP\DesignExtractor\EntityExtractor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\EntityExtractor\VariableExtractor.h">
+      <Filter>Header Files\SP\DesignExtractor\EntityExtractor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\EntityExtractor\ConstantExtractor.h">
+      <Filter>Header Files\SP\DesignExtractor\EntityExtractor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\RelationshipExtractor\RelationshipExtractor.h">
+      <Filter>Header Files\SP\DesignExtractor\RelationshipExtractor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\PatternExtractor\AssignPatternExtractor.h">
+      <Filter>Header Files\SP\DesignExtractor\PatternExtractor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\PatternExtractor\IfPatternExtractor.h">
+      <Filter>Header Files\SP\DesignExtractor\PatternExtractor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\PatternExtractor\WhilePatternExtractor.h">
+      <Filter>Header Files\SP\DesignExtractor\PatternExtractor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\InsertRequests\InsertPatternRequests\InsertAssignPatternRequest.h">
+      <Filter>Header Files\Request\InsertRequests\InsertPatternRequests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\InsertRequests\InsertPatternRequests\InsertIfPatternRequest.h">
+      <Filter>Header Files\Request\InsertRequests\InsertPatternRequests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\InsertRequests\InsertPatternRequests\InsertWhilePatternRequest.h">
+      <Filter>Header Files\Request\InsertRequests\InsertPatternRequests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\GetRequests\GetPatternRequests\GetAssignPatternRequest.h">
+      <Filter>Header Files\Request\GetRequests\GetPatternRequest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\GetRequests\GetPatternRequests\GetIfPatternRequest.h">
+      <Filter>Header Files\Request\GetRequests\GetPatternRequest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Request\GetRequests\GetPatternRequests\GetWhilePatternRequest.h">
+      <Filter>Header Files\Request\GetRequests\GetPatternRequest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryParser\AttrRef.h">
+      <Filter>Header Files\QP\QueryParser</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

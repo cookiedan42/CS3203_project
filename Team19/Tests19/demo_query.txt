@@ -1,0 +1,10 @@
+4 - all Affects rel involving stmt 1 as arg1. Output: StmtNo, Input: Syn_Int 
+assign a1;
+Select a1.stmt# such that Affects(1,a1)
+3
+5000
+5 - Next star
+stmt s1;
+Select s1.stmt# such that Next*(1,s1)
+2, 3
+5000

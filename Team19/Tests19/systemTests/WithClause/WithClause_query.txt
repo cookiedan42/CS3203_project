@@ -1,0 +1,235 @@
+1 - Select all procedures with invalid string compare
+procedure p; variable v;
+Select p with string = string
+SyntaxError
+5000
+2 - Select all procedures with invalid int compare
+procedure p; variable v;
+Select p with 1 = 1.5
+SyntaxError
+5000
+3 - Select all procedures with invalid synonym compare
+procedure p; variable v;
+Select p with string = p
+SyntaxError
+5000
+4 - Select all procedures that satisfy true with int value = int value
+procedure p; variable v;
+Select p with 1 = 1
+main, main2
+5000
+5 - Select all procedures that satisfy true with str value = str value
+procedure p; variable v;
+Select p with "random" = "random"
+main, main2
+5000
+6 - Select all procedures that satisfy false with int value = int value
+procedure p; variable v;
+Select p with 1 = 2
+none
+5000
+7 - Select all procedures that satisfy false with str value = str value
+procedure p; variable v;
+Select p with "random" = "nothing"
+none
+5000
+8 - Select all procedures that satisfy true with procName attribute = str value
+procedure p; variable v;
+Select p with p.procName = "main"
+main
+5000
+9 - Select all procedures that satisfy false with procName attribute = str value
+procedure p; variable v;
+Select p with p.procName = "nothing"
+none
+5000
+10 - Select all unrelated syn that satisfy true with procName attribute = str value
+constant c; procedure p; variable v;
+Select c with p.procName = "main"
+0, 1, 5, 10
+5000
+11 - Select all unrelated syn that satisfy false with procName attribute = str value
+constant c; procedure p; variable v;
+Select c with p.procName = "nothing"
+none
+5000
+12 - Select all unrelated syn with wrong syn for procName attribute
+constant c; procedure p; variable v;
+Select c with v.procName = "main"
+SemanticError
+5000
+13 - Select all procedures with proc procName attribute = wrong comparison type int
+procedure p;
+Select p with p.procName = 3
+SemanticError
+5000
+14 - Select all calls that satisfy true with call procName attribute = correct comparison type str
+call c; 
+Select c with c.procName = "main2"
+1
+5000
+15 - Select all procedures that satisfy true with value attribute = correct comparison type int
+constant c; procedure p;
+Select p with c.value = 1
+main, main2
+5000
+16 - Select all constants that satisfy false with value attribute = correct comparison type int
+constant c; 
+Select c with c.value = 11
+none
+5000
+17 - Select all variables that satisfy with wrong syn for value attribute
+variable v;
+Select v with v.value = 11
+SemanticError
+5000
+18 - Select all constants that satisfy with value attribute = wrong comparison type str
+constant c;
+Select c with c.value = "main"
+SemanticError
+5000
+19 - Select all variables that satisfy true with variable syn varName attribute = correct comparison type str
+variable v; 
+Select v with v.varName = "x"
+x
+5000
+20 - Select all read statements that satisfy true with read syn varName attribute = correct comparison type str
+read r; 
+Select r with r.varName = "b"
+2
+5000
+21 - Select all print statements that satisfy true with print syn varName attribute = correct comparison type str
+print p; 
+Select p with p.varName =  "c"
+3
+5000
+22 - Select all constants that satisfy true with variable syn varName attribute = correct comparison type str
+constant c;  variable v;
+Select c with v.varName = "x"
+0, 1, 5, 10
+5000
+23 - Select all procedures that satisfy with varName attribute = wrong comparison type int
+procedure p; variable v; 
+Select p with v.varName = 11
+SemanticError
+5000
+24 - Select all procedures that satisfy with wrong syn for varName attribute
+procedure p;
+Select p with p.varName = 11
+SemanticError
+5000
+25 - Select all variables that satisfy with varName attribute = wrong comparison type int
+variable v;
+Select v with v.varName = 3
+SemanticError
+5000
+26 - Select all variables that satisfy with varName attribute = invalid IDENT str value
+variable v;
+Select v with v.varName = "3"
+SyntaxError
+5000
+27 - Select all statements that satisfy true with stmtNo attribute = correct comparison type int
+stmt s;
+Select s with s.stmt# = 3
+3
+5000
+28 - Select all read statements that satisfy true with stmtNo attribute = correct comparison type int
+read r;
+Select r with r.stmt# = 2
+2
+5000
+29 - Select all print statements that satisfy true with stmtNo attribute = correct comparison type int
+print p;
+Select p with p.stmt# = 3
+3
+5000
+30 - Select all call statements that satisfy true with stmtNo attribute = correct comparison type int
+call c;
+Select c with c.stmt# = 1
+1
+5000
+31 - Select all while statements that satisfy true with stmtNo attribute = correct comparison type int
+while w;
+Select w with w.stmt# = 4
+4
+5000
+32 - Select all if statements that satisfy true with stmtNo attribute = correct comparison type int
+if i;
+Select i with i.stmt# = 8
+8
+5000
+33 - Select all assign statements that satisfy true with stmtNo attribute = correct comparison type int
+assign a;
+Select a with a.stmt# = 6
+6
+5000
+34 - Select all procedures that satisfy with wrong syn for stmtNo attribute
+procedure p;
+Select p with p.stmt# = 11
+SemanticError
+5000
+35 - Select all constants that satisfy with wrong syn for stmtNo attribute
+constant c;
+Select c with c.stmt# = 11
+SemanticError
+5000
+36 - Select all statements that satisfy with stmtNo attribute = wrong comparison type str
+stmt s;
+Select s with s.stmt# = "statementNum"
+SemanticError
+5000
+37 - Select all statements that satisfy with stmtNo attribute = wrong comparison type str with invalid input
+stmt s;
+Select s with s.stmt# = "3"
+SyntaxError
+5000
+38 - Select all statements that satisfy with stmtNo attribute = invalid int value
+stmt s;
+Select s with s.stmt# = 10.5
+SyntaxError
+5000
+39 - Select all if statements that satisfy true with while stmtNo attribute = correct comparison type int
+if i; while w;
+Select i with w.stmt# = 4
+8
+5000
+40 - Select all variable that satisfy true with value = procName attribute
+procedure p; variable v;
+Select v with "main2" = p.procName
+x,y,z,t,p,a,b,c
+5000
+41 - Select all procedures that satisfy false with value = procName attribute
+procedure p; variable v;
+Select p with "nothing" = p.procName
+none
+5000
+42 - Select all procedures that satisfy with procName attribute = procName attribute
+procedure p; procedure q;
+Select p with q.procName = p.procName
+main, main2
+5000
+43 - Select all variables that satisfy with varName attribute = varName attribute
+variable p; variable q;
+Select p with q.varName = p.varName
+x,y,z,t,p,a,b,c
+5000
+44 - Select all constants that satisfy with value attribute = value attribute
+constant p; constant q;
+Select p with q.value = p.value
+0,1,5,10
+5000
+45 - Select all statements that satisfy with stmt# attribute = stmt# attribute
+stmt p; stmt q;
+Select p with q.stmt# = p.stmt#
+1,2,3,4,5,6,7,8,9,10,11,12,13,14,15
+5000
+46 - Select all statements that satisfy with stmt# attribute = value attribute
+stmt s; constant c;
+Select s with s.stmt# = c.value
+1,5,10
+5000
+47 - Select all procedures that satisfy with procName attribute = varName attribute
+procedure p; variable v;
+Select p with p.procName = v.varName
+none
+5000

@@ -1,0 +1,29 @@
+procedure p {
+    x = 1;
+    z = 2;
+    z = x;
+    if (z < 2) then {
+        x = 3;
+    } else {
+        x = 4;
+    }
+    while (x > 0){
+        x = x - 1;
+    }
+}
+procedure q {
+    i = 3;
+    print k;
+    while (i > 0){
+        i = i - 1;
+    }
+}
+procedure example {
+    i = 4;
+    read i;
+    if (i < 2) then {
+        m = 3;
+    } else {
+        m = 4;
+    }
+}
